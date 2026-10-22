@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar NQ · Panel matinal del Nasdaq 100 | JLM Investor</title>
+<meta name="description" content="Cada mañana a las 8:00: cómo cerró el Nasdaq 100, noticias que lo movieron, niveles clave, escenarios del día y agenda en hora de Madrid.">
+<meta property="og:title" content="Radar NQ · Panel matinal del Nasdaq 100">
+<meta property="og:description" content="Resumen de ayer, niveles, escenarios y agenda del día para el futuro del Nasdaq 100. Actualizado cada mañana.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0D1117;--panel:#151B23;--panel2:#0F141A;--line:#262E39;--line2:#222A34;
+  --text:#E6EDF3;--soft:#C4CDD8;--muted:#9AA6B5;
+  --up:#4FC3D9;--dn:#F59B52;--res:#E8C468;--sup:#7CC4F5;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--sup)}a:hover{color:#B3DCFA}
+.wrap{max-width:1360px;margin:0 auto;padding:24px 16px 48px;display:flex;flex-direction:column;gap:18px}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.lbl{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0}
+.up{color:var(--up)}.dn{color:var(--dn)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.card h2{margin:0;font-size:19px;font-weight:600}
+.flow{display:flex;flex-wrap:wrap;gap:16px}
+.flow>.card{flex:1 1 340px}
+.w2{flex-grow:2 !important}.w3{flex-grow:3 !important}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.tile{background:var(--panel2);border-radius:8px;padding:12px}
+.tile p{margin:0}
+.tile .v{margin-top:6px;font-size:17px;font-weight:600}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid var(--line2);font-size:14px}
+.row:last-child{border-bottom:0}
+.note{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+.txt{margin:0;font-size:15px;line-height:1.6;color:var(--soft)}
+/* brand bar */
+.brand{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand a.logo{font-weight:700;font-size:17px;color:var(--text);text-decoration:none;letter-spacing:.01em}
+.brand a.logo span{color:var(--up)}
+.cta{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:8px;background:var(--up);color:#06141A;font-weight:600;text-decoration:none;font-size:14px}
+.cta:hover{background:#7AD3E4;color:#06141A}
+header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;padding:8px 0 16px;border-bottom:1px solid var(--line)}
+header.top h1{margin:6px 0;font-size:clamp(26px,4vw,34px);font-weight:700;letter-spacing:-.01em}
+header.top h1 small{color:var(--muted);font-weight:400;font-size:.6em}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px}
+.chip p{margin:0}.chip .v{margin-top:4px;font-size:18px;font-weight:600}
+.big{margin:6px 0 0;font-size:clamp(34px,6vw,44px);font-weight:600;line-height:1}
+.meter{display:flex;gap:6px}
+.meter i{flex:1;height:10px;border-radius:3px;background:#2D3643}
+.meter i.on{background:currentColor}
+.bar{display:grid;grid-template-columns:minmax(90px,130px) minmax(0,1fr) 70px;align-items:center;gap:10px;font-size:14px}
+.bar .track{height:10px;background:var(--panel2);border-radius:3px;overflow:hidden}
+.bar .fill{height:10px;border-radius:3px}
+.lvl-r{color:var(--res)}.lvl-s{color:var(--sup)}.lvl-ref{color:var(--muted)}
+.row.precio{background:#1C232D;margin:0 -8px;padding:9px 8px;font-weight:600}
+.scen{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.scen>div{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.scen>div.dn{border-color:#3A2A1E}.scen>div.up{border-color:#1E3540}
+.imp{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.imp.alto{color:var(--dn)}
+.tv{height:440px;border-radius:8px;overflow:hidden;background:var(--panel2)}
+footer{display:flex;flex-direction:column;gap:10px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.6}
+footer p{margin:0}
+.err{padding:20px;border:1px solid var(--dn);border-radius:10px;color:var(--soft)}
+@media (max-width:520px){.card{padding:16px}.bar{grid-template-columns:90px minmax(0,1fr) 62px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <a class="logo" href="/">JLM <span>Investor</span></a>
+    <a class="cta" href="[ENLACE_TELEGRAM]">Recíbelo en Telegram</a>
+  </div>
+
+  <header class="top">
+    <div>
+      <p class="lbl">Radar NQ · panel matinal del Nasdaq 100</p>
+      <h1><span id="contrato"></span> <small id="contrato-nombre"></small></h1>
+      <p class="note" style="font-size:15px">Actualizado: <span id="fecha"></span> · <span id="actualizado"></span></p>
+    </div>
+    <div class="chips" id="horas"></div>
+  </header>
+
+  <main id="app" style="display:flex;flex-direction:column;gap:18px"></main>
+
+  <section class="card">
+    <h2>Gráfico Nasdaq 100 · 1H</h2>
+    <div class="tv">
+      <div class="tradingview-widget-container" style="height:100%;width:100%">
+        <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {"autosize":true,"symbol":"OANDA:NAS100USD","interval":"60","timezone":"Europe/Madrid","theme":"dark","style":"1","locale":"es","allow_symbol_change":true,"hide_side_toolbar":false,"studies":["STD;RSI"],"support_host":"https://www.tradingview.com"}
+        </script>
+      </div>
+    </div>
+    <p class="note">Gráfico de TradingView del CFD del Nasdaq 100 (precio de referencia, no el futuro de la CME).</p>
+  </section>
+
+  <footer>
+    <p id="aviso-horario"></p>
+    <p><b style="color:var(--soft)">Transparencia.</b> Análisis elaborado por Javier Lucas Méndez (JLM Investor). Contenido informativo y educativo; los escenarios describen lo que el autor vigila hoy, no una orden de compra o venta. El autor puede operar el futuro del Nasdaq 100. Posición en el subyacente al publicar: [DECLARAR].</p>
+    <p>Fuentes: <span id="fuentes"></span></p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function add(p) { for (var i = 1; i < arguments.length; i++) if (arguments[i]) p.appendChild(arguments[i]); return p; }
+  function card(title, extra) { var c = el('section', 'card' + (extra ? ' ' + extra : '')); if (title) add(c, el('h2', null, title)); return c; }
+  function row(left, right, rcls, lcls) { return add(el('div', 'row'), el('span', lcls || null, left), el('span', 'mono ' + (rcls || ''), right)); }
+  function tile(label, value, sub, dir) {
+    var t = el('div', 'tile');
+    add(t, el('p', 'lbl', label), el('p', 'mono v ' + (dir || ''), value));
+    if (sub) add(t, el('p', 'mono ' + (dir || ''), sub)).lastChild.style.cssText = 'font-size:13px;margin-top:2px;' + (dir ? '' : 'color:var(--muted)');
+    return t;
+  }
+
+  function render(D) {
+    document.getElementById('contrato').textContent = D.contrato;
+    document.getElementById('contrato-nombre').textContent = '· ' + D.contrato_nombre;
+    document.getElementById('fecha').textContent = D.fecha;
+    document.getElementById('actualizado').textContent = D.actualizado;
+    document.getElementById('aviso-horario').textContent = D.aviso_horario || '';
+    var h = document.getElementById('horas');
+    D.horas.forEach(function (x) { add(h, add(el('div', 'chip'), el('p', 'lbl', x.n), el('p', 'mono v', x.v))); });
+    var f = document.getElementById('fuentes');
+    D.fuentes.forEach(function (x, i) { var a = el('a', null, x.n); a.href = x.url; a.rel = 'noopener nofollow'; a.target = '_blank'; if (i) f.appendChild(document.createTextNode(' · ')); f.appendChild(a); });
+
+    var app = document.getElementById('app');
+
+    // Precio + sesgo
+    var r1 = el('div', 'flow');
+    var pc = card(null, 'w2');
+    pc.style.cssText = 'flex-direction:row;flex-wrap:wrap;gap:28px;align-items:center';
+    add(pc, add(el('div'), el('p', 'lbl', 'Futuro NQ · premarket'), el('p', 'mono big', D.precio.premarket), (function(){var p=el('p','mono '+D.precio.dir,D.precio.cambio);p.style.cssText='margin:8px 0 0;font-size:18px;font-weight:500';return p;})()));
+    var det = el('div'); det.style.cssText = 'display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)';
+    [['Cierre de ayer ', D.precio.cierre_ayer, ''], ['Gap de apertura ', D.precio.gap, D.precio.dir], ['Equivale a ', D.precio.gap_mnq, '']].forEach(function (x) {
+      var s = el('span', null, x[0]); var b = el('b', 'mono ' + x[2], x[1]); if (!x[2]) b.style.color = 'var(--text)'; add(s, b); add(det, s);
+    });
+    add(pc, det);
+    var sc = card(null);
+    var st = el('p', D.sesgo.dir, D.sesgo.titulo); st.style.cssText = 'margin:0;font-size:26px;font-weight:700';
+    add(sc, el('p', 'lbl', 'Sesgo de apertura'), st, el('p', 'txt', D.sesgo.texto));
+    var cc = card(null);
+    var m = el('div', 'meter ' + D.sesgo.dir); m.setAttribute('role', 'img'); m.setAttribute('aria-label', 'Confianza ' + D.sesgo.confianza + ' de 5');
+    for (var i = 0; i < 5; i++) add(m, el('i', i < D.sesgo.confianza ? 'on' : ''));
+    add(cc, el('p', 'lbl', 'Confianza del sesgo'), m, el('p', 'txt', D.sesgo.confianza + '/5 · ' + D.sesgo.condicion));
+    add(app, add(r1, pc, sc, cc));
+
+    // Ayer + noticias
+    var r2 = el('div', 'flow');
+    var ay = card(null, 'w3');
+    var hd = el('div'); hd.style.cssText = 'display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap';
+    add(hd, el('h2', null, D.ayer.titulo), el('span', 'mono ' + D.ayer.dir, D.ayer.etiqueta));
+    var tl = el('div', 'tiles'); D.ayer.indices.forEach(function (x) { add(tl, tile(x.n, x.v, null, x.dir)); });
+    add(ay, hd, el('p', 'txt', D.ayer.resumen), tl);
+    var nw = card('Noticias que movieron el precio', 'w2');
+    var nl = el('div'); D.noticias.forEach(function (x) { add(nl, row(x.t, x.v, x.dir)); });
+    add(nw, nl, el('p', 'note', D.noticias_nota));
+    add(app, add(r2, ay, nw));
+
+    // Estructura + fuerza
+    var r3 = el('div', 'flow');
+    var es = card('Lectura de estructura', 'w2');
+    add(es, add(el('div'), el('p', 'lbl', '4 horas'), (function(){var p=el('p','txt',D.estructura.h4);p.style.marginTop='6px';return p;})()),
+            add(el('div'), el('p', 'lbl', '1 hora'), (function(){var p=el('p','txt',D.estructura.h1);p.style.marginTop='6px';return p;})()));
+    var fz = card('Fuerza relativa · ayer');
+    D.fuerza.forEach(function (x) {
+      var b = el('div', 'bar'); var tr = el('div', 'track'); var fi = el('div', 'fill');
+      fi.style.width = Math.max(2, Math.min(100, x.pct)) + '%'; fi.style.background = x.dir === 'dn' ? 'var(--dn)' : 'var(--up)';
+      add(b, el('span', null, x.n), add(tr, fi), (function(){var s=el('span','mono '+x.dir,x.v);s.style.textAlign='right';return s;})()); add(fz, b);
+    });
+    add(fz, el('p', 'note', D.fuerza_nota));
+    add(app, add(r3, es, fz));
+
+    // Niveles + escenarios
+    var r4 = el('div', 'flow');
+    var nv = card('Niveles clave');
+    var lv = el('div');
+    D.niveles.forEach(function (x) {
+      var r = row(x.n, x.v, x.tipo === 'precio' ? D.precio.dir : '', 'lvl-' + x.tipo);
+      if (x.tipo === 'precio') r.className = 'row precio';
+      add(lv, r);
+    });
+    add(nv, lv, el('p', 'note', D.niveles_nota));
+    var ec = card('Escenarios para hoy', 'w2');
+    var sg = el('div', 'scen');
+    [D.escenarios.principal, D.escenarios.alternativo].forEach(function (x) {
+      var b = el('div', x.dir); var t = el('p', 'lbl ' + x.dir, x.titulo); t.style.color = 'var(--' + x.dir + ')';
+      add(b, t, el('p', 'txt', x.texto), el('p', 'mono note', x.gatillo)); add(sg, b);
+    });
+    add(ec, sg, el('p', 'note', D.escenarios.invalidacion));
+    add(app, add(r4, nv, ec));
+
+    // Intermercado + agenda
+    var r5 = el('div', 'flow');
+    var im = card('Intermercado');
+    var it = el('div', 'tiles'); D.intermercado.forEach(function (x) { add(it, tile(x.n, x.v, x.c, x.dir)); });
+    add(im, it, el('p', 'note', D.globales));
+    var ag = card('Agenda de hoy (hora de Madrid)');
+    var al = el('div');
+    D.agenda.forEach(function (x) {
+      var r = el('div', 'row'); var hh = el('span', 'mono', x.h); hh.style.cssText = 'color:var(--muted);min-width:48px';
+      var e = el('span', null, x.e); e.style.flex = '1';
+      add(r, hh, e, el('span', 'imp ' + x.imp, x.imp)); add(al, r);
+    });
+    add(ag, al, el('p', 'note', D.resultados));
+    add(app, add(r5, im, ag));
+
+    // Pesos pesados
+    var pp = card('Pesos pesados y chips · premarket');
+    var pt = el('div', 'tiles'); D.pesados.forEach(function (x) { add(pt, tile(x.t, x.v, null, x.dir)); });
+    add(pp, pt, el('p', 'note', D.pesados_nota));
+    add(app, pp);
+  }
+
+  var s = document.createElement('script');
+  s.src = 'datos.js?t=' + Date.now();
+  s.onload = function () {
+    try { render(window.PANEL); }
+    catch (e) { var a = document.getElementById('app'); a.appendChild(el('div', 'err', 'No se pudieron mostrar los datos de hoy. Vuelve a intentarlo en unos minutos.')); }
+  };
+  s.onerror = function () { document.getElementById('app').appendChild(el('div', 'err', 'Los datos de hoy aún no están disponibles.')); };
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>
