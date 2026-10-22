@@ -1,7 +1,7 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
   "fecha": "Jueves 22 de octubre de 2026",
-  "actualizado": "08:00 (Madrid)",
+  "actualizado": "14:16 (Madrid) · prueba de despliegue",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026",
   "horas": [
