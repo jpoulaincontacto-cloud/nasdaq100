@@ -1,130 +1,121 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
-  "fecha": "Viernes 30 de octubre de 2026",
-  "actualizado": "14:30 (Madrid)",
+  "fecha": "Lunes 2 de noviembre de 2026",
+  "actualizado": "08:15 (Madrid)",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
   "horas": [
-    { "n": "Apertura cash", "v": "14:30" },
-    { "n": "PMI de Chicago", "v": "14:45" },
-    { "n": "Cierre", "v": "21:00" }
+    { "n": "ISM manufacturero", "v": "16:00" },
+    { "n": "Apertura cash", "v": "15:30" },
+    { "n": "Apple y Palantir", "v": "tras 22:00" }
   ],
   "precio": {
-    "premarket": "≈ 28.779,5",
-    "cambio": "−782,5 · −2,65 %",
-    "dir": "dn",
-    "cierre_ayer": "≈ 29.562 (jueves, futuro)",
-    "gap": "≈ −782 pts (bajista)",
-    "gap_mnq": "≈ −1.565 $ por contrato MNQ"
+    "premarket": "—",
+    "cambio": "≈ +0,9 % (Reuters, 05:49 Madrid)",
+    "dir": "up",
+    "cierre_ayer": "— (futuro) · Nasdaq 100 cash 28.384,85 (viernes)",
+    "gap": "≈ +0,9 % (alcista, rebote)",
+    "gap_mnq": "≈ +500 $ por contrato MNQ (estimado sobre ≈ +250 pts)"
   },
   "sesgo": {
-    "dir": "dn",
-    "titulo": "Bajista",
-    "confianza": 4,
-    "texto": "El futuro NQ se hunde ≈ 2,6 % tras Amazon (≈ −6,7 %: fallo en BPA y flujo de caja libre de −42.400 M$ por el gasto en IA) e Intel (≈ −25,7 % por una previsión del T4 muy débil), que arrastran a los chips (AMD −8,3 %, NVDA −3,2 %, SOXX ≈ −6 %). Es el segundo golpe seguido de las grandes tecnológicas tras Alphabet. El precio pierde los 29.000 y el soporte de marco mayor de 28.800. El ECI salió en línea (+0,8 %) y los bonos bajan de rentabilidad, pero el mercado sigue pagando la rotación fuera de la IA. Último día de octubre: ojo a los flujos de fin de mes.",
-    "condicion": "Bajista mientras el precio no recupere 29.060–29.129 (SMA 20 de 1H). Cierre de 1H sobre 29.129 → rebote hacia 29.368; pérdida de 28.635 → 28.450."
+    "dir": "",
+    "titulo": "Neutral (rebote en tendencia bajista)",
+    "confianza": 2,
+    "texto": "Tras el peor día desde junio (Nasdaq 100 −3,46 % el viernes, semis −7,2 %) y el peor mes desde abril de 2025 (Nasdaq ≈ −7 % en octubre), el futuro NQ rebota ≈ +0,9 % en Asia. Ayudan la caída del crudo (Brent −3,3 % por las negociaciones con Irán en Catar para reabrir Ormuz), Asia al alza (Kospi +2,3 %) y el bitcoin recuperando. Pero la estructura sigue bajista y hoy hay dos riesgos claros: ISM manufacturero (16:00) y Apple y Palantir tras el cierre; mañana, elecciones de mitad de mandato y AMD.",
+    "condicion": "Rebote vendible mientras el precio no recupere 28.750–28.945 (antiguos soportes, ahora resistencia). Aceptación sobre 28.945 → 29.400; pérdida del mínimo del viernes → presión hacia 27.176."
   },
   "ayer": {
-    "titulo": "Qué pasó ayer · jueves 29 oct",
-    "etiqueta": "Nasdaq −1,38 %",
+    "titulo": "Qué pasó el viernes · 30 oct",
+    "etiqueta": "Nasdaq −2,86 %",
     "dir": "dn",
-    "resumen": "Caída del Nasdaq por Alphabet (≈ −12 %, la mayor caída de su historia), mientras el resto del mercado rotaba a sectores defensivos: el S&P 500 de igual ponderación subió +1,2 %. Lideraron salud (+2,40 %), inmobiliario (+2,21 %), consumo básico (+1,54 %) y utilities (+1,53 %); a la cola, comunicaciones (−1,87 %) y tecnología (−1,18 %). Cierres: Nasdaq 100 29.402 (−1,4 %), S&P 500 7.720,39, Nasdaq 26.184,72, Dow 52.342,56 y Russell 2000 2.859,22. Macro: PIB del T3 +3,4 % (est. 3,1 %); PCE de septiembre +0,5 % m/m y 3,6 % a/a, subyacente 3,1 % (en línea); el BCE mantuvo tipos y Lagarde anunció que dejará el cargo el 7 de febrero de 2027. Bono a 10 años 4,98 % (−7 pb), Brent 114,88 $, oro −0,5 %, VIX 17,20. Tras el cierre, Amazon −6,2 % e Intel −16,9 % (después amplió la caída). Futuro NQ: liquidación ≈ 29.562; máx./mín.: —.",
+    "resumen": "Peor sesión desde junio por la venta en tecnología e IA tras Amazon e Intel (Intel −28,6 %, su peor día en décadas). Nasdaq 100 −3,46 % (28.384,85), Nasdaq 25.437,00, S&P 500 −1,82 % (7.580,07; mín. 7.527,67), Dow −1,09 % (51.770,31) y Russell 2000 −1,66 % (2.811,84). Lideraron energía (+1,91 %), consumo básico (+1,41 %) y utilities (+0,67 %); a la cola, tecnología (−4,89 %), industriales (−1,60 %) y comunicaciones (−1,29 %). Semis (SOX) −7,20 %, NVDA −4,22 %, AVGO −5,48 %, Reddit −29,2 %. Macro: PMI de Chicago 55,3 (est. 56,1); ECI +0,8 % t/t. Bono a 10 años 4,94 % (−4 pb), Brent 113,43 $, oro −3,3 % (mínimo de un año), VIX 19,42 (+12,9 %). Apple recuperó el puesto de mayor empresa del mundo. Futuro NQ: liquidación —; máx./mín.: —.",
     "indices": [
-      { "n": "Nasdaq", "v": "−1,38 %", "dir": "dn" },
-      { "n": "S&P 500", "v": "−0,30 %", "dir": "dn" },
-      { "n": "Dow", "v": "−0,25 %", "dir": "dn" },
-      { "n": "Russell 2000", "v": "+1,01 %", "dir": "up" }
+      { "n": "Nasdaq", "v": "−2,86 %", "dir": "dn" },
+      { "n": "S&P 500", "v": "−1,82 %", "dir": "dn" },
+      { "n": "Dow", "v": "−1,09 %", "dir": "dn" },
+      { "n": "Russell 2000", "v": "−1,66 %", "dir": "dn" }
     ]
   },
   "noticias": [
-    { "t": "Intel se desploma por una previsión del T4 muy por debajo de lo esperado y avisa de quema de caja", "v": "INTC ≈ −25,7 %", "dir": "dn" },
-    { "t": "Amazon falla en BPA (1,89 $ vs 1,97 $) y su flujo de caja libre a 12 meses cae a −42.400 M$ por el gasto en IA; AWS +39 %", "v": "AMZN ≈ −6,7 %", "dir": "dn" },
-    { "t": "Venta en chips y hardware: AMD, Dell y HP a la baja; Reddit −21,7 % por su previsión de usuarios", "v": "AMD −8,3 %", "dir": "dn" },
-    { "t": "Petroleras al alza: ExxonMobil y Chevron baten; Brent ≈ 117 $ por los ataques a petroleros en Ormuz", "v": "XOM +2 %", "dir": "up" },
-    { "t": "Coste laboral (ECI) del T3 +0,8 %, en línea; el bono a 10 años baja a ≈ 4,91 %", "v": "+0,8 %", "dir": "" },
-    { "t": "CME da ≈ 74 % de probabilidad a una subida de la Fed en diciembre; Binance sufre un hackeo de ≈ 6.300 M$", "v": "BTC ≈ −3 %", "dir": "dn" }
+    { "t": "Rebote en futuros tras el peor día desde junio; el Nasdaq cerró octubre ≈ −7 %, su peor mes desde abril de 2025", "v": "NQ ≈ +0,9 %", "dir": "up" },
+    { "t": "Irán negocia en Catar una propuesta para reabrir Ormuz en dos días; el crudo cae con fuerza", "v": "Brent −3,3 %", "dir": "up" },
+    { "t": "Hoy tras el cierre: Apple (BPA est. ≈ 2,00 $; ingresos ≈ 113.000 M$) y Palantir", "v": "AAPL", "dir": "" },
+    { "t": "Mañana elecciones de mitad de mandato en EE. UU. y resultados de AMD; Trump da más tiempo a la diplomacia con Irán", "v": "3 nov", "dir": "" },
+    { "t": "Binance reabre retiradas tras el hackeo de 6.300 M$ (salidas netas de 3.600 M$); bitcoin rebota", "v": "BTC +0,9 %", "dir": "up" },
+    { "t": "El mercado da ≈ 72 % a una subida de la Fed en diciembre; empleo del viernes est. +65.000", "v": "72 %", "dir": "dn" }
   ],
-  "noticias_nota": "% de premarket según Reuters (08:15 ET = 13:15 Madrid) e investingLive; futuro NQ de Yahoo Finance (≈ 13:27 Madrid). Otras fuentes daban el NQ entre −2,1 % y −2,6 % a distintas horas.",
+  "noticias_nota": "Futuros: Reuters vía MarketScreener (05:49 Madrid, NQ ≈ +0,9 %); TipRanks daba +0,84 % a las 06:38 y TokenPost hablaba de subidas puntuales de más del 1 %. No he encontrado el precio exacto del futuro publicado a esta hora.",
   "estructura": {
-    "h4": "Bajista. El rebote de la semana fracasó el miércoles en el máximo decreciente de 29.993–30.007 y el jueves el precio perdió el mínimo creciente de 29.559 (CHoCH bajista confirmado). Esta madrugada el gap lo lleva bajo 29.000 y bajo el soporte de marco mayor de 28.800, por debajo de la SMA 50 de 4H (≈ 29.368, XTB). La antigua zona de soporte 29.400–29.650 pasa a ser resistencia. Solo un cierre de 4H sobre 29.400 neutralizaría la estructura bajista.",
-    "h1": "Bajista: máximos y mínimos decrecientes desde 29.650, con el precio bajo la SMA 20 de 1H (≈ 29.129) y bajo la SMA 200. El pivote es 28.880: por debajo, los rebotes son vendibles hacia 28.725 y 28.635. Un cierre de 1H sobre 29.060–29.129 sería la primera señal de alivio (CHoCH alcista de corto plazo)."
+    "h4": "Bajista. Tras el CHoCH bajista del jueves (pérdida de 29.559), el viernes el precio rompió los 29.000 y el soporte de corto plazo de 28.750, con máximos y mínimos decrecientes desde 30.007. El rebote de esta madrugada es, por ahora, un retroceso dentro de esa estructura: la zona 28.750–28.945 (soportes perdidos) es la primera resistencia y 29.400–29.650 la de marco mayor. Un cierre de 4H sobre 28.945 sería la primera señal de giro; perder el mínimo del viernes apunta a 27.176 (Bolsamanía).",
+    "h1": "Rebote nocturno desde mínimos con máximos crecientes en Asia (posible mínimo de corto plazo). Mientras no acepte sobre 28.750–28.945, el rebote es correctivo y vendible; un BOS alcista de 1H sobre esa zona abriría 29.130–29.400. Máx./mín. nocturnos: —."
   },
   "fuerza": [
-    { "n": "Salud (sector)", "v": "+2,40 %", "pct": 9, "dir": "up" },
-    { "n": "Inmobiliario (sector)", "v": "+2,21 %", "pct": 9, "dir": "up" },
-    { "n": "Hang Seng (Asia)", "v": "+1,5 %", "pct": 6, "dir": "up" },
-    { "n": "Russell 2000", "v": "+1,01 %", "pct": 4, "dir": "up" },
-    { "n": "Tecnología (sector)", "v": "−1,18 %", "pct": 5, "dir": "dn" },
-    { "n": "Comunicaciones (sector)", "v": "−1,87 %", "pct": 7, "dir": "dn" },
-    { "n": "Futuro NQ (noche)", "v": "−2,65 %", "pct": 10, "dir": "dn" },
-    { "n": "Kospi (Asia)", "v": "≈ −4,5 %", "pct": 18, "dir": "dn" },
-    { "n": "Amazon (premarket)", "v": "−6,7 %", "pct": 26, "dir": "dn" },
-    { "n": "Intel (premarket)", "v": "−25,7 %", "pct": 100, "dir": "dn" }
+    { "n": "Energía (sector, vie.)", "v": "+1,91 %", "pct": 7, "dir": "up" },
+    { "n": "Consumo básico (vie.)", "v": "+1,41 %", "pct": 5, "dir": "up" },
+    { "n": "Utilities (vie.)", "v": "+0,67 %", "pct": 2, "dir": "up" },
+    { "n": "Kospi (hoy)", "v": "+2,3 %", "pct": 8, "dir": "up" },
+    { "n": "Nasdaq 100 (vie.)", "v": "−3,46 %", "pct": 12, "dir": "dn" },
+    { "n": "Nvidia (vie.)", "v": "−4,22 %", "pct": 15, "dir": "dn" },
+    { "n": "Tecnología (sector, vie.)", "v": "−4,89 %", "pct": 17, "dir": "dn" },
+    { "n": "Broadcom (vie.)", "v": "−5,48 %", "pct": 19, "dir": "dn" },
+    { "n": "Semis SOX (vie.)", "v": "−7,20 %", "pct": 25, "dir": "dn" },
+    { "n": "Intel (vie.)", "v": "−28,58 %", "pct": 100, "dir": "dn" }
   ],
-  "fuerza_nota": "Sectores e índices: cierre del jueves (Capp Notes); Asia y futuro, viernes; valores, premarket (investingLive, Reuters). Rotación clara a defensivos y pequeñas compañías; tecnología y comunicaciones, a la cola.",
+  "fuerza_nota": "Sectores, índices y valores: cierre del viernes (Capp Notes); Kospi, hoy (AP). Rotación defensiva clara: energía y consumo básico arriba; tecnología y semis, a la cola.",
   "niveles": [
-    { "n": "Resistencia 5 · antigua zona de soporte del jueves", "v": "29.400–29.650", "tipo": "r" },
-    { "n": "Cierre de ayer (futuro, liquidación)", "v": "≈ 29.562", "tipo": "ref" },
-    { "n": "Resistencia 4 · SMA 50 de 4H (XTB, US100)", "v": "29.368", "tipo": "r" },
-    { "n": "Resistencia 3 · objetivo de rebote (NQ Wizard)", "v": "29.195", "tipo": "r" },
-    { "n": "Resistencia 2 · SMA 20 de 1H (XTB, US100)", "v": "29.129", "tipo": "r" },
-    { "n": "Resistencia 1 · gatillo de ruptura (NQ Wizard)", "v": "29.060", "tipo": "r" },
-    { "n": "Pivote del día (NQ Wizard)", "v": "28.880", "tipo": "ref" },
-    { "n": "Precio premarket (≈ 13:27 Madrid)", "v": "≈ 28.779,5", "tipo": "precio" },
-    { "n": "Soporte 1 · objetivo bajista (NQ Wizard)", "v": "28.725", "tipo": "s" },
-    { "n": "Soporte 2 · estructura de marco mayor", "v": "28.635", "tipo": "s" },
-    { "n": "Soporte 3 · rango bajo XTB / siguiente objetivo", "v": "28.574–28.450", "tipo": "s" }
+    { "n": "Resistencia 4 · máximo histórico (Bolsamanía)", "v": "31.361", "tipo": "r" },
+    { "n": "Resistencia 3 · impulso alcista (Bolsamanía)", "v": "29.928", "tipo": "r" },
+    { "n": "Resistencia 2 · antigua zona de soporte (futuro NQ)", "v": "29.400–29.650", "tipo": "r" },
+    { "n": "Resistencia 1 · soportes perdidos (Bolsamanía)", "v": "28.750–28.945", "tipo": "r" },
+    { "n": "Cierre Nasdaq 100 cash (viernes)", "v": "28.384,85", "tipo": "precio" },
+    { "n": "Soporte 1 · cambio de tendencia (Bolsamanía)", "v": "27.176", "tipo": "s" }
   ],
-  "niveles_nota": "Niveles del futuro NQ: The NQ Market Wizard (plan del 30 oct). SMA 20 de 1H, SMA 50 de 4H y rango 28.574–29.118: XTB (30 oct, 11:28, CFD US100; puede diferir unos puntos del futuro). Premarket: Yahoo Finance (NQ=F, ≈ 13:27 Madrid). Máx./mín. de ayer y nocturnos: —. RSI: —.",
+  "niveles_nota": "Niveles del Nasdaq 100 cash: Bolsamanía (2 nov, 06:00), que además señala la media de 200 sesiones como posible soporte (valor: —). Zona 29.400–29.650: futuro NQ (The NQ Market Wizard, 30 oct). Precio del futuro esta madrugada: —. Máx./mín. del viernes y nocturnos: —. RSI: —.",
   "escenarios": {
-    "principal": { "titulo": "Escenario principal · continuación bajista tras el gap", "dir": "dn", "texto": "Apertura con gap de ≈ −782 puntos. Si el primer rebote se frena bajo 28.880–29.060, venta hacia 28.725 y 28.635, y por debajo 28.450. El PMI de Chicago (14:45) y las intervenciones de Barkin, Daly (17:00) y Musalem (17:30) son los catalizadores; los flujos de fin de mes pueden meter volatilidad al cierre.", "gatillo": "Gatillo: rechazo en 28.880–29.060 y cierre de 15 min bajo 28.725 tras la apertura cash (14:30)" },
-    "alternativo": { "titulo": "Alternativo · rebote técnico por sobreventa", "dir": "up", "texto": "Tras tres sesiones de castigo a las grandes tecnológicas, compras de oportunidad y caída de rentabilidades sostienen al índice: el precio aguanta 28.635–28.725, recupera 29.060 y busca 29.195–29.368 dentro de una estructura todavía bajista.", "gatillo": "Gatillo: cierre de 1H sobre 29.129" },
-    "invalidacion": "Invalidación: cierre de 4H sobre 29.400 anula el sesgo bajista (→ 29.650); cierre de 4H bajo 28.635 lo acelera (→ 28.450)."
+    "principal": { "titulo": "Escenario principal · rebote que se frena en resistencia", "dir": "dn", "texto": "El rebote de Asia continúa en la apertura pero se agota en 28.750–28.945 (soportes perdidos). Con el ISM (16:00), Apple y Palantir tras el cierre y las elecciones mañana, el mercado no tiene prisa por comprar tecnología: vuelta a mínimos del viernes.", "gatillo": "Gatillo: rechazo en 28.750–28.945 y cierre de 15 min por debajo del mínimo del rango inicial tras la apertura cash (15:30)" },
+    "alternativo": { "titulo": "Alternativo · rebote de alivio más amplio", "dir": "up", "texto": "La caída del crudo y de las rentabilidades, más compras por sobreventa tras el peor mes desde 2025, llevan al precio a aceptar sobre 28.945 y buscar 29.400–29.650.", "gatillo": "Gatillo: cierre de 1H sobre 28.945" },
+    "invalidacion": "Invalidación: cierre de 4H sobre 29.650 anula el sesgo bajista de fondo (→ 29.928); perder el mínimo del viernes lo reactiva (→ 27.176)."
   },
   "intermercado": [
-    { "n": "Brent", "v": "≈ 117", "c": "+2,5 % hoy · WTI 104,2", "dir": "up" },
-    { "n": "Bono 10A EE. UU.", "v": "≈ 4,91 %", "c": "−8 pb · 2A 4,57 %", "dir": "dn" },
-    { "n": "Oro", "v": "3.968", "c": "−1,3 % hoy · bajo 4.000", "dir": "dn" },
-    { "n": "USD/JPY", "v": "157,03", "c": "−0,4 % · EUR/USD 1,1194", "dir": "dn" },
-    { "n": "VIX", "v": "18,60", "c": "+8,1 % (17,20 jue.)", "dir": "dn" },
-    { "n": "Bitcoin", "v": "≈ 77.300", "c": "≈ −3 % · hackeo de Binance", "dir": "dn" }
+    { "n": "Brent", "v": "≈ 109,7", "c": "−3,3 % hoy · WTI 100,6", "dir": "dn" },
+    { "n": "Bono 10A EE. UU.", "v": "4,93 %", "c": "plano · 2A 4,61 %", "dir": "" },
+    { "n": "Oro", "v": "≈ 3.911", "c": "+0,9 % hoy · mín. de un año el vie.", "dir": "up" },
+    { "n": "USD/JPY", "v": "≈ 157,8", "c": "+0,1 % · EUR/USD 1,1170", "dir": "up" },
+    { "n": "VIX", "v": "19,42", "c": "+12,9 % (cierre vie.)", "dir": "dn" },
+    { "n": "Bitcoin", "v": "≈ 78.477", "c": "+0,9 %", "dir": "up" }
   ],
-  "globales": "Asia mayoritariamente a la baja: Nikkei −2,1 % (63.290,11), Topix −1 %, Kospi ≈ −4,5 % (≈ 5.662; se activó el sidecar), Taiex −2,5 %, Shanghai −1,4 % (3.599,02), CSI 300 −1,4 %; solo el Hang Seng sube +1,5 % (23.294,42). El Banco de Japón mantuvo el 1,25 % y subió su previsión de inflación. Europa, de más a menos: Euro Stoxx 50 −0,9 %, DAX −0,8 %, Ibex −0,6 %, FTSE +0,1 % a media sesión; ASML ≈ −4,5 %, Sanofi ≈ +5,5 %. Inflación por encima de lo esperado en Francia (3,8 %) e Italia (5,6 %). Índice del dólar ≈ 101,6–101,9.",
+  "globales": "Asia mixta-alcista: Kospi +2,3 % (5.859,83; SK Hynix +4,2 %, Samsung +1,7 %) tras caer un 16 % en octubre; Shanghai +1,2 % (3.640,93) con reuniones de los reguladores chinos para apoyar la bolsa, aunque el PMI manufacturero chino volvió a contracción; Hang Seng +0,6 % (23.437,41); Nikkei −0,1 % (63.218,02; Kioxia −14 %); Taiex −0,2 % (TSMC −1,5 %); ASX −0,6 %. Europa: futuros del Euro Stoxx 50 +0,3 % y del DAX +0,2 %; apertura a las 09:00. Índice del dólar ≈ 101,9.",
   "agenda": [
-    { "h": "13:30", "e": "Coste laboral (ECI) T3: +0,8 %, en línea (previo +0,9 %)", "imp": "medio" },
-    { "h": "14:30", "e": "Apertura de Wall Street · Barkin (Fed) en Sirius XM", "imp": "medio" },
-    { "h": "14:45", "e": "PMI de Chicago de octubre (est. ≈ 55–56; previo 58,8)", "imp": "medio" },
-    { "h": "17:00", "e": "Daly (Fed de San Francisco)", "imp": "medio" },
-    { "h": "17:30", "e": "Musalem (Fed de San Luis)", "imp": "medio" },
-    { "h": "21:00", "e": "Cierre de Wall Street y de mes", "imp": "bajo" },
-    { "h": "2 nov", "e": "Apple y Palantir: resultados (lunes)", "imp": "alto" },
-    { "h": "3 nov", "e": "AMD: resultados (martes)", "imp": "alto" },
-    { "h": "6 nov", "e": "Empleo de octubre", "imp": "alto" },
-    { "h": "8–9 dic", "e": "Próximo FOMC: CME da ≈ 74 % a una subida de tipos", "imp": "alto" }
+    { "h": "15:30", "e": "Apertura de Wall Street (ya con horario de invierno)", "imp": "medio" },
+    { "h": "16:00", "e": "ISM manufacturero de octubre (EE. UU.)", "imp": "alto" },
+    { "h": "22:00", "e": "Cierre de Wall Street", "imp": "bajo" },
+    { "h": "Tras cierre", "e": "Apple: resultados (BPA est. ≈ 1,98–2,00 $; ingresos ≈ 113.000 M$; margen bruto guiado 47–48 %)", "imp": "alto" },
+    { "h": "Tras cierre", "e": "Palantir: resultados (ingresos guiados 2.160–2.164 M$)", "imp": "alto" },
+    { "h": "3 nov", "e": "Elecciones de mitad de mandato en EE. UU. · JOLTS (16:00) · AMD tras el cierre", "imp": "alto" },
+    { "h": "4 nov", "e": "ISM de servicios (16:00) · Qualcomm y Arm · plan de emisiones del Tesoro", "imp": "medio" },
+    { "h": "6 nov", "e": "Empleo de octubre (14:30): est. +65.000, paro 4,2 %", "imp": "alto" },
+    { "h": "8–9 dic", "e": "Próximo FOMC: el mercado da ≈ 72 % a una subida de 25 pb", "imp": "alto" }
   ],
-  "resultados": "Antes de la apertura: ExxonMobil y Chevron (baten), AbbVie, Colgate-Palmolive, Regeneron, General Dynamics, LyondellBasell, Dominion Energy y Cboe. Después del cierre: sin resultados relevantes. Ayer tras el cierre: Amazon (≈ −6,7 %), Intel (≈ −25,7 %), Reddit (−21,7 %), Roblox (−19 %), Twilio (−18 %), Pinterest (−12 %); al alza, Rivian (+4 %) y Mondelez (+3 %). La semana que viene: Apple y Palantir (lunes), AMD (martes).",
+  "resultados": "Hoy después del cierre: Apple y Palantir (las dos a las 23:00 Madrid su conferencia). Antes de la apertura: —. Resto de la semana: AMD (martes), Qualcomm y Arm (miércoles), además de Pfizer, Uber, McDonald's, Super Micro, Block e IonQ. El viernes: Intel −28,6 % y Reddit −29,2 % tras sus resultados.",
   "pesados": [
-    { "t": "NVDA", "v": "−3,2 %", "dir": "dn" },
-    { "t": "AAPL", "v": "−1,1 %", "dir": "dn" },
-    { "t": "MSFT", "v": "−0,6 %", "dir": "dn" },
-    { "t": "AMZN", "v": "≈ −6,7 %", "dir": "dn" },
-    { "t": "META", "v": "−1,8 %", "dir": "dn" },
-    { "t": "GOOGL", "v": "≈ −1,0 %", "dir": "dn" },
-    { "t": "TSLA", "v": "−2,4 %", "dir": "dn" },
-    { "t": "AVGO", "v": "—", "dir": "" }
+    { "t": "NVDA", "v": "−4,22 % (vie.)", "dir": "dn" },
+    { "t": "AAPL", "v": "−1,23 % (vie.)", "dir": "dn" },
+    { "t": "MSFT", "v": "—", "dir": "" },
+    { "t": "AMZN", "v": "−1,41 % (vie.)", "dir": "dn" },
+    { "t": "META", "v": "—", "dir": "" },
+    { "t": "GOOGL", "v": "—", "dir": "" },
+    { "t": "TSLA", "v": "—", "dir": "" },
+    { "t": "AVGO", "v": "−5,48 % (vie.)", "dir": "dn" }
   ],
-  "pesados_nota": "Premarket: NVDA, AMZN y GOOGL según Reuters/investingLive (13:15 Madrid); AAPL, MSFT, META y TSLA según Bloomberg vía ZeroHedge (≈ 12:30 Madrid). AVGO: sin dato publicado. Semis: Intel −25,7 %, AMD −8,3 %, Dell −11,8 %, HP −9,5 %, Sandisk −8 %; SOXX ≈ −6 %.",
-  "aviso_horario": "Hoy es el último día con 5 h de desfase con Nueva York (apertura 14:30, cierre 21:00 en Madrid). EE. UU. cambia de hora el domingo 1 nov: desde el lunes 2 nov los datos salen a las 14:30, la apertura es a las 15:30 y el cierre a las 22:00 (Madrid).",
+  "pesados_nota": "A esta hora no hay premarket publicado de los pesos pesados: se muestran los cierres del viernes que he encontrado (Capp Notes). MSFT, META, GOOGL y TSLA: sin dato. Semis el viernes: SOX −7,20 %, Intel −28,58 %; hoy en Asia SK Hynix +4,2 % y TSMC −1,5 %.",
+  "aviso_horario": "EE. UU. ya cambió de hora el domingo 1 nov: el desfase con Nueva York vuelve a 6 h → datos a las 14:30, apertura a las 15:30 y cierre a las 22:00 (Madrid).",
   "fuentes": [
-    { "n": "Yahoo Finance (futuros, intermercado y Banco de Japón)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html" },
-    { "n": "Reuters vía Investing.com (futuros y premarket)", "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163" },
-    { "n": "Capp Notes (cierre del jueves y sectores)", "url": "https://cappnotes.substack.com/p/closing-look-thursday-october-29" },
-    { "n": "Saxo (Nasdaq 100, Asia, BoJ y calendario)", "url": "https://www.home.saxo/en-ch/content/articles/macro/market-quick-take---now-amazon-and-intel-spook-us-tech---30-october-2026-30102026" },
-    { "n": "ZeroHedge/Bloomberg (megacaps, Europa, Fed y agenda)", "url": "https://www.zerohedge.com/markets/futures-slide-ai-reckoning-claims-amazon-intel-oil-jumps-hormuz-tanker-hits" },
-    { "n": "investingLive (bonos, divisas, Europa y agenda)", "url": "https://investinglive.com/technical-analysis/morning-kickstart-tech-hammered-as-amazon-and-intel-tumble-oil-rises-despite-peace-talk/" },
-    { "n": "Armenpress (cierres de Asia)", "url": "https://armenpress.am/en/article/1264357" },
-    { "n": "XTB (niveles US100, 30 oct)", "url": "https://www.xtb.com/de/Marktanalysen/Trading-News/nasdaq-100-prognose-analyse-fuer-den-30-10-26-aktuelle-einschaetzung" },
-    { "n": "The NQ Market Wizard (niveles del futuro NQ)", "url": "https://thenqmarketwizard.substack.com/p/nq-trade-plan-1030-8cc" },
-    { "n": "TheStreet (crudo, oro y Binance)", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026" }
+    { "n": "Capp Notes (cierre del viernes y sectores)", "url": "https://cappnotes.substack.com/p/closing-look-friday-october-30-2026" },
+    { "n": "Reuters vía MarketScreener (futuros, divisas, Fed y Apple)", "url": "https://www.marketscreener.com/news/stocks-bounce-as-apple-earnings-near-oil-falls-ce785fd8dc89fe2c" },
+    { "n": "Bloomberg vía Swissinfo (Asia, crudo, oro y bitcoin)", "url": "https://swissinfo.ch/eng/stock-selloff-eases-in-asian-trade,-oil-declines:-markets-wrap/92310840" },
+    { "n": "AP vía WSLS (cierres de Asia e Irán)", "url": "https://www.wsls.com/business/2026/11/02/asian-shares-mostly-advance-but-tech-stocks-remain-volatile-while-oil-sinks-33/" },
+    { "n": "TipRanks (futuros de madrugada)", "url": "https://www.tipranks.com/news/u-s-stock-futures-rise-as-investors-eye-earnings-midterm-elections-and-jobs-report" },
+    { "n": "Opportunity Costs (agenda de la semana)", "url": "https://opportunitycosts.substack.com/p/week-ahead-aapl-and-pltr-monday-midterms" },
+    { "n": "Bolsamanía (niveles del Nasdaq 100)", "url": "https://www.bolsamania.com/noticias/analisis-tecnico/alerta-en-el-nasdaq-100-que-ataca-nieves-clave--23960234.html" }
   ]
 };
