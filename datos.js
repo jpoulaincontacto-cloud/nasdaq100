@@ -1,7 +1,7 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
   "fecha": "Martes 3 de noviembre de 2026",
-  "actualizado": "08:20 (Madrid)",
+  "actualizado": "11:10 (Madrid) · cotizaciones de madrugada",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
   "horas": [
