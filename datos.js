@@ -112,6 +112,29 @@ window.PANEL = {
     { "t": "AVGO", "v": "—", "dir": "" }
   ],
   "pesados_nota": "A esta hora no hay premarket publicado de los pesos pesados y mi fuente del cierre del miércoles no recoge el resto de las 7 Magníficas: solo hay dato de Nvidia (Capp Notes y AP). Semis el miércoles: SOX +5,7 % con todos sus valores al alza.",
+  "analisis": {
+    "swing": {
+      "dir": "dn",
+      "marco": "Diario / 4H · días a semanas",
+      "titulo": "Neutral-bajista: vender rebotes en resistencia",
+      "texto": "Desde el récord (≈ 31.400, 6 oct) el índice ha corregido hasta 26.366 (6 nov). El rebote posterior marca mínimos crecientes (27.516), pero sigue por debajo del último máximo decreciente (28.969) y de la media rápida (29.727). Con la Fed camino de subir tipos en diciembre y el caso Nvidia abierto, la zona 28.600–28.800 es de venta mientras no se supere 28.969 en cierre diario.",
+      "entrada": "28.600–28.800 (rechazo en diario o 4H)",
+      "stop": "Cierre diario sobre 28.969",
+      "objetivos": ["27.837", "27.516", "26.366"],
+      "alternativa": "Alternativa alcista: cierre diario sobre 28.969 cambia el sesgo swing a alcista, con objetivos en 29.727 y 30.000."
+    },
+    "intradia": {
+      "dir": "dn",
+      "marco": "15 min / 1H · solo hoy",
+      "titulo": "Bajista: vender el rebote tras el gap",
+      "texto": "Gap bajista por Nvidia. Plan: esperar un rebote hacia la zona de VWAP (28.232–28.300) y buscar rechazo para vender. No perseguir la caída si el precio llega a 28.165 sin rebotar antes. Ojo a las 14:30 (paro semanal) y a la apertura cash de las 15:30.",
+      "entrada": "28.232–28.300 (rechazo en 15 min)",
+      "stop": "28.340 (sobre el VAH en desarrollo)",
+      "objetivos": ["28.165", "27.957", "27.837"],
+      "alternativa": "Si el precio acepta sobre 28.337 en 1H, se anulan los cortos: posible vuelta a 28.441 (cierre de ayer). Compra solo con confirmación en 27.837."
+    },
+    "nota": "Análisis propio a partir de los niveles publicados (investingLive, Oneup Trader) y la estructura de price action. No incluye tamaño de posición ni gestión de riesgo personal."
+  },
   "aviso_horario": "",
   "fuentes": [
     { "n": "Capp Notes (cierre del miércoles)", "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-11" },

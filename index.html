@@ -64,6 +64,7 @@ header.top h1 small{color:var(--muted);font-weight:400;font-size:.6em}
 .scen>div.dn{border-color:#3A2A1E}.scen>div.up{border-color:#1E3540}
 .imp{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .imp.alto{color:var(--dn)}
+.plan{border-left:3px solid var(--line)}.plan-up{border-left-color:var(--up)}.plan-dn{border-left-color:var(--dn)}
 footer{display:flex;flex-direction:column;gap:10px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.6}
 footer p{margin:0}
 .err{padding:20px;border:1px solid var(--dn);border-radius:10px;color:var(--soft)}
@@ -210,6 +211,28 @@ footer p{margin:0}
     var pt = el('div', 'tiles'); D.pesados.forEach(function (x) { add(pt, tile(x.t, x.v, null, x.dir)); });
     add(pp, pt, el('p', 'note', D.pesados_nota));
     add(app, pp);
+
+    // Análisis swing + intradía
+    if (D.analisis && (D.analisis.swing || D.analisis.intradia)) {
+      var r6 = el('div', 'flow');
+      [['Análisis swing', D.analisis.swing], ['Análisis intradía', D.analisis.intradia]].forEach(function (p) {
+        var x = p[1]; if (!x) return;
+        var c = card(null, 'w2 plan' + (x.dir ? ' plan-' + x.dir : ''));
+        var hd2 = el('div'); hd2.style.cssText = 'display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap';
+        add(hd2, el('h2', null, p[0]), el('span', 'lbl', x.marco || ''));
+        var tt = el('p', x.dir || '', x.titulo); tt.style.cssText = 'margin:0;font-size:22px;font-weight:700';
+        add(c, hd2, tt, el('p', 'txt', x.texto));
+        var lst = el('div');
+        if (x.entrada) add(lst, row('Zona de entrada', x.entrada, x.dir));
+        if (x.stop) add(lst, row('Stop / invalidación', x.stop, 'dn'));
+        (x.objetivos || []).forEach(function (o, i) { add(lst, row('Objetivo ' + (i + 1), o, 'up')); });
+        add(c, lst);
+        if (x.alternativa) add(c, el('p', 'note', x.alternativa));
+        add(r6, c);
+      });
+      add(app, r6);
+      if (D.analisis.nota) add(app, el('p', 'note', D.analisis.nota));
+    }
   }
 
   var s = document.createElement('script');
