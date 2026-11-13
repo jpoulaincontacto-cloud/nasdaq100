@@ -1,147 +1,143 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
-  "fecha": "Jueves 12 de noviembre de 2026",
+  "fecha": "Viernes 13 de noviembre de 2026",
   "actualizado": "08:10 (Madrid)",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
   "horas": [
-    { "n": "Paro semanal", "v": "14:30" },
+    { "n": "IPP (habitual)", "v": "14:30" },
     { "n": "Apertura cash", "v": "15:30" },
-    { "n": "Cisco y AMAT", "v": "tras 22:00" }
+    { "n": "Cierre", "v": "22:00" }
   ],
   "precio": {
-    "premarket": "≈ 28.185",
-    "cambio": "≈ −256 · −0,9 %",
-    "dir": "dn",
-    "cierre_ayer": "≈ 28.441 (miércoles, futuro, estimado)",
-    "gap": "≈ −256 pts (bajista)",
-    "gap_mnq": "≈ −512 $ por contrato MNQ"
+    "premarket": "—",
+    "cambio": "≈ +0,6 % (Saxo y ChainCatcher)",
+    "dir": "up",
+    "cierre_ayer": "— (futuro) · Nasdaq 100 cash 28.289,19 (jueves)",
+    "gap": "≈ +0,6 % (≈ +170 pts estimados)",
+    "gap_mnq": "≈ +340 $ por contrato MNQ (estimado)"
   },
   "sesgo": {
-    "dir": "dn",
-    "titulo": "Bajista",
-    "confianza": 3,
-    "texto": "Nvidia se hunde ≈ 8–10 % fuera de hora: según varias informaciones, su consejo se reunió el miércoles por la noche para decidir si destituye a Jensen Huang y trabaja con una firma externa para buscarle sustituto, tras las acusaciones de varias relaciones extramatrimoniales (una con una presunta espía china). El futuro NQ cae ≈ 0,9 % (≈ 28.185) y borra parte del rally de ayer (Nasdaq 100 +2,28 %, SOX +5,7 % con CoreWeave +24,7 %). Asia, mixta y débil (Taiex −1,2 %, Hang Seng −0,9 %). El dólar está en máximos de 18 meses, el yen roza los 160 y el mercado da ya ≈ 87–100 % a una subida de la Fed en diciembre. Hoy, paro semanal (14:30) y, tras el cierre, Cisco y Applied Materials.",
-    "condicion": "Bajista mientras el precio no recupere 28.300–28.337 (VAH en desarrollo / stop de investingLive). Pérdida de 28.165 → 27.957 y 27.837; recuperar 28.337 neutraliza la caída."
+    "dir": "",
+    "titulo": "Neutral (rebote frágil)",
+    "confianza": 2,
+    "texto": "Jensen Huang dimitió ayer con efecto inmediato y la directora financiera, Colette Kress, es consejera delegada interina; Harvey Jones pasa a ser el primer presidente del consejo de Nvidia. La acción cayó un 4,3 %, pero el índice solo cedió un 0,3 % porque AMD (+5,9 %) y Broadcom (+5,5 %) recogieron el testigo. Esta madrugada el futuro NQ sube ≈ 0,6 % con Cisco (+3 % fuera de hora tras ingresos récord de 18.500 M$ y guía al alza). En contra: el 10 años vuelve a superar el 5 % (5,10 %), el dólar está en máximos de 18 meses, el yen roza 160, el crudo rebota (Brent ≈ 95,7 $) y el mercado descuenta por completo una subida de la Fed en diciembre (Nomura plantea incluso 50 pb). Hoy, IPP de octubre.",
+    "condicion": "Neutral entre 28.165 y 28.441. Aceptación sobre 28.441 → 28.600–28.800; pérdida de 28.165 → 27.957 y 27.837."
   },
   "ayer": {
-    "titulo": "Qué pasó ayer · miércoles 11 nov",
-    "etiqueta": "Nasdaq +1,60 %",
-    "dir": "up",
-    "resumen": "Gran rally de la IA liderado por CoreWeave (+24,7 % tras batir y elevar su guía de 2026 a 13.000–13.300 M$). Nasdaq 100 +2,28 % (28.374,25), Nasdaq +1,60 % (25.466,19), S&P 500 +1,31 % (7.619,38; a un 2,6 % de su récord), Dow +0,49 % (52.486,49) y Russell 2000 +0,88 % (2.846,26). Lideraron tecnología (+3,23 %), energía (+1,86 %) e industriales (+1,33 %); a la cola, consumo discrecional (−0,05 %). El índice de semiconductores de Filadelfia subió un 5,7 % con todos sus componentes al alza; Nvidia +2,87 % pese a la rebaja de Baird. Bonos cerrados por Veterans Day (10 años 4,98 % del martes). Brent +1,39 % (92,76 $), oro −0,74 % (4.000,50), VIX 17,49 (−10 %), índice del dólar 102,92 (+0,67 %, máximo desde abril de 2025), bitcoin ≈ 74.440. Futuro NQ: cierre ≈ 28.441 (estimado); máx./mín.: —.",
+    "titulo": "Qué pasó ayer · jueves 12 nov",
+    "etiqueta": "Nasdaq −0,39 %",
+    "dir": "dn",
+    "resumen": "Dimisión de Jensen Huang en Nvidia: la acción cayó un 4,34 %, pero AMD (+5,86 %) y Broadcom (+5,54 %) subieron y el S&P 500 borró una caída inicial de casi el 1 %. Nasdaq 100 −0,30 % (28.289,19), Nasdaq −0,39 % (25.366,09), S&P 500 −0,35 % (7.592,40), Dow −0,36 % (52.297,09) y Russell 2000 −1,66 % (2.799,06). Solo subió energía (+1,51 %); a la cola, materiales (−1,28 %), comunicaciones (−0,96 %) e industriales (−0,89 %). SMH −1,03 %. Paro semanal 200.000 (est. 195.000). Bonos vendidos: 2 años 4,88 % y 10 años 5,10 % (+12 pb). Brent +3,30 % (95,82 $) tras decir Trump que EE. UU. no «necesita un acuerdo con Irán»; oro −2,88 % (3.885,30, mínimo desde octubre de 2025), VIX 18,70 (+6,9 %), índice del dólar 103,19, bitcoin ≈ 71.500 (−4 %). Futuro NQ: cierre y máx./mín.: —.",
     "indices": [
-      { "n": "Nasdaq", "v": "+1,60 %", "dir": "up" },
-      { "n": "S&P 500", "v": "+1,31 %", "dir": "up" },
-      { "n": "Dow", "v": "+0,49 %", "dir": "up" },
-      { "n": "Russell 2000", "v": "+0,88 %", "dir": "up" }
+      { "n": "Nasdaq", "v": "−0,39 %", "dir": "dn" },
+      { "n": "S&P 500", "v": "−0,35 %", "dir": "dn" },
+      { "n": "Dow", "v": "−0,36 %", "dir": "dn" },
+      { "n": "Russell 2000", "v": "−1,66 %", "dir": "dn" }
     ]
   },
   "noticias": [
-    { "t": "El consejo de Nvidia se reúne para decidir si destituye a Jensen Huang y busca posibles sustitutos con una firma externa", "v": "NVDA ≈ −8,6 %", "dir": "dn" },
-    { "t": "CoreWeave se dispara tras batir y elevar su guía de 2026; los semis tuvieron su mejor cierre desde el 3 de noviembre", "v": "CRWV +24,7 %", "dir": "up" },
-    { "t": "Hoy tras el cierre: Cisco y Applied Materials, claves para el gasto en IA y equipos de chips", "v": "22:00", "dir": "" },
-    { "t": "El dólar marca máximos de 18 meses y el yen roza 160; el mercado descuenta casi por completo una subida de la Fed en diciembre", "v": "USD/JPY 159,7", "dir": "dn" },
-    { "t": "El crudo baja hacia mínimos de dos meses por el aumento de la producción en Oriente Medio", "v": "WTI −1,5 %", "dir": "up" },
-    { "t": "Asia, débil por Nvidia: Taiex −1,2 %, Hang Seng −0,9 %, Nikkei −0,1 %", "v": "Taiex −1,2 %", "dir": "dn" }
+    { "t": "Jensen Huang dimite en Nvidia; Colette Kress, consejera delegada interina, y Harvey Jones, primer presidente del consejo", "v": "NVDA −4,34 %", "dir": "dn" },
+    { "t": "AMD y Broadcom suben con fuerza como alternativas a Nvidia", "v": "AMD +5,86 %", "dir": "up" },
+    { "t": "Cisco bate con ingresos récord (18.500 M$) y eleva su guía anual; Applied Materials, plana pese a una guía mejor de lo esperado", "v": "CSCO ≈ +3 %", "dir": "up" },
+    { "t": "El bono a 10 años vuelve a superar el 5 % y el mercado descuenta por completo una subida de la Fed en diciembre; Nomura plantea 50 pb", "v": "10A 5,10 %", "dir": "dn" },
+    { "t": "Trump: EE. UU. no «necesita un acuerdo con Irán»; el crudo rebota más de un 3 %", "v": "Brent +3,3 %", "dir": "dn" },
+    { "t": "Hoy, IPP de octubre; el dólar en máximos de 18 meses y el yen tocando 160", "v": "USD/JPY 159,9", "dir": "" }
   ],
-  "noticias_nota": "Futuro NQ: Bloomberg vía Swissinfo (−0,9 % a las 05:54 Madrid) e investingLive (≈ 28.185 a las 06:25). Otras fuentes dieron −0,8 % tras la noticia del WSJ. Nvidia: AP (−8,6 % fuera de hora), Bloomberg (hasta −10 %), Reuters (más de −8 %). Las informaciones sobre el consejo de Nvidia citan fuentes anónimas; no hay decisión oficial a esta hora.",
+  "noticias_nota": "Futuro NQ: Saxo (+0,6 %) y ChainCatcher (+0,56 %), sin nivel publicado. No he encontrado el cierre ni la cotización exacta del futuro esta mañana, así que el gap en puntos es una estimación a partir del %. Cierres: Capp Notes (resumen asistido por IA que cita varias fuentes).",
   "estructura": {
-    "h4": "Neutral-alcista en riesgo. El rebote desde 26.366 (6 nov) ha marcado mínimos crecientes (27.516 el martes) y ayer un nuevo máximo de rebote cerca de 28.441, superando el máximo del lunes (28.129). Pero la noticia de Nvidia devuelve el precio a 28.185: si pierde 27.957–27.837 (POC de los días anteriores) el giro alcista se invalida. La resistencia mayor sigue en 28.600–28.800 y 28.969.",
-    "h1": "Bajista de corto plazo: gap nocturno con CHoCH bajista bajo 28.300 tras la noticia de Nvidia. La zona 28.232–28.337 (VWAP y bandas) es de venta según investingLive; por abajo, 28.165 (VAL del miércoles), 27.957 y 27.837 son los objetivos. Máx./mín. nocturnos: —."
+    "h4": "Neutral. El rebote desde 26.366 (6 nov) sigue con mínimos crecientes (27.516 el 10 nov), pero el miércoles se frenó en ≈ 28.441 y ayer el precio retrocedió por Nvidia sin perder la zona de 28.165. Rango de corto plazo 28.165–28.441: una ruptura al alza abre 28.600–28.800 y 28.969 (último máximo decreciente); una ruptura a la baja, 27.957–27.837. Hasta superar 28.969 la tendencia de fondo desde el récord sigue siendo bajista.",
+    "h1": "Rebote nocturno dentro del rango 28.165–28.441. La caída de ayer fue absorbida (AMD y Broadcom compensaron a Nvidia), lo que muestra compradores en la zona baja. Sin niveles nocturnos publicados: —. Un cierre de 1H sobre 28.441 sería BOS alcista; bajo 28.165, BOS bajista."
   },
   "fuerza": [
-    { "n": "CoreWeave (miér.)", "v": "+24,71 %", "pct": 100, "dir": "up" },
-    { "n": "Semis SOX (miér.)", "v": "+5,7 %", "pct": 23, "dir": "up" },
-    { "n": "Tecnología (miér.)", "v": "+3,23 %", "pct": 13, "dir": "up" },
-    { "n": "Nasdaq 100 (miér.)", "v": "+2,28 %", "pct": 9, "dir": "up" },
-    { "n": "Energía (miér.)", "v": "+1,86 %", "pct": 8, "dir": "up" },
-    { "n": "Consumo discrecional (miér.)", "v": "−0,05 %", "pct": 1, "dir": "dn" },
-    { "n": "Hang Seng (hoy)", "v": "−0,9 %", "pct": 4, "dir": "dn" },
-    { "n": "Futuro NQ (noche)", "v": "≈ −0,9 %", "pct": 4, "dir": "dn" },
-    { "n": "Taiex (hoy)", "v": "−1,2 %", "pct": 5, "dir": "dn" },
-    { "n": "Nvidia (fuera de hora)", "v": "≈ −8,6 %", "pct": 35, "dir": "dn" }
+    { "n": "AMD (jue.)", "v": "+5,86 %", "pct": 100, "dir": "up" },
+    { "n": "Broadcom (jue.)", "v": "+5,54 %", "pct": 95, "dir": "up" },
+    { "n": "Cisco (fuera de hora)", "v": "≈ +3 %", "pct": 51, "dir": "up" },
+    { "n": "Taiex (hoy)", "v": "+1,7 %", "pct": 29, "dir": "up" },
+    { "n": "Energía (jue.)", "v": "+1,51 %", "pct": 26, "dir": "up" },
+    { "n": "Nikkei (hoy)", "v": "+0,8 %", "pct": 14, "dir": "up" },
+    { "n": "Nasdaq 100 (jue.)", "v": "−0,30 %", "pct": 5, "dir": "dn" },
+    { "n": "Hang Seng (hoy)", "v": "−0,9 %", "pct": 15, "dir": "dn" },
+    { "n": "Russell 2000 (jue.)", "v": "−1,66 %", "pct": 28, "dir": "dn" },
+    { "n": "Nvidia (jue.)", "v": "−4,34 %", "pct": 74, "dir": "dn" }
   ],
-  "fuerza_nota": "Sectores, índices y valores del miércoles: Capp Notes; Asia, hoy (AP); Nvidia, fuera de hora (AP); futuro NQ, Bloomberg.",
+  "fuerza_nota": "Sectores, índices y valores del jueves: Capp Notes; Asia, hoy (AP); Cisco, fuera de hora (Capp Notes).",
   "niveles": [
-    { "n": "Resistencia 5 · máx. del 4 nov", "v": "28.969", "tipo": "r" },
-    { "n": "Resistencia 4 · antiguo soporte (Oneup Trader)", "v": "28.600–28.800", "tipo": "r" },
-    { "n": "Cierre de ayer (futuro, estimado)", "v": "≈ 28.441", "tipo": "ref" },
-    { "n": "Resistencia 3 · stop / VAH en desarrollo (investingLive)", "v": "28.300–28.337", "tipo": "r" },
-    { "n": "Resistencia 2 · VWAP y banda (investingLive)", "v": "28.254–28.284", "tipo": "r" },
-    { "n": "Resistencia 1 · primera entrada corta (investingLive)", "v": "28.232", "tipo": "r" },
-    { "n": "Precio premarket (06:25 Madrid)", "v": "≈ 28.185", "tipo": "precio" },
-    { "n": "Soporte 1 · VAL de ayer", "v": "28.165", "tipo": "s" },
-    { "n": "Soporte 2 · POC de una sesión anterior", "v": "27.957", "tipo": "s" },
+    { "n": "Resistencia 3 · último máx. decreciente", "v": "28.969", "tipo": "r" },
+    { "n": "Resistencia 2 · antiguo soporte (Oneup Trader)", "v": "28.600–28.800", "tipo": "r" },
+    { "n": "Resistencia 1 · máx. del rebote (cierre est. del miér.)", "v": "≈ 28.441", "tipo": "r" },
+    { "n": "Zona de stop corto / VAH (investingLive, 12 nov)", "v": "28.300–28.337", "tipo": "ref" },
+    { "n": "Cierre Nasdaq 100 cash (jueves)", "v": "28.289,19", "tipo": "precio" },
+    { "n": "Soporte 1 · VAL del miércoles", "v": "28.165", "tipo": "s" },
+    { "n": "Soporte 2 · POC previo", "v": "27.957", "tipo": "s" },
     { "n": "Soporte 3 · POC y VWAP del 10 nov", "v": "27.837", "tipo": "s" },
     { "n": "Soporte 4 · mínimo del 10 nov", "v": "27.516", "tipo": "s" }
   ],
-  "niveles_nota": "Niveles del futuro NQ: investingLive (12 nov, 06:25 Madrid; sesgo bajista, vender rebotes). 28.600–28.800: Oneup Trader. 28.969 y 27.516: investingLive (11 nov). Cierre del miércoles estimado a partir de la cotización y el % de Bloomberg. RSI: —.",
+  "niveles_nota": "No he encontrado niveles del futuro NQ publicados hoy: se usan los de investingLive (11 y 12 nov) y Oneup Trader. La referencia de precio es el cierre cash del Nasdaq 100 porque no hay cotización exacta del futuro. RSI: —.",
   "escenarios": {
-    "principal": { "titulo": "Escenario principal · Nvidia arrastra al índice", "dir": "dn", "texto": "Nvidia (≈ 8 % del índice) cae con fuerza en la apertura mientras el mercado espera la decisión del consejo. Rebotes hacia 28.232–28.300 se venden y el precio busca 28.165, 27.957 y 27.837.", "gatillo": "Gatillo: rechazo en 28.232–28.300 y cierre de 15 min bajo 28.165 tras la apertura cash (15:30)" },
-    "alternativo": { "titulo": "Alternativo · el resto de la IA aguanta", "dir": "up", "texto": "El mercado separa el problema de gobierno de Nvidia de la demanda de IA (CoreWeave, TSMC): el resto de semis compensa, el precio recupera 28.337 y vuelve a 28.441 antes de Cisco y Applied Materials.", "gatillo": "Gatillo: cierre de 1H sobre 28.337" },
-    "invalidacion": "Invalidación: cierre de 4H sobre 28.441 anula el sesgo bajista (→ 28.600–28.800); cierre de 4H bajo 27.837 lo acelera (→ 27.516)."
+    "principal": { "titulo": "Escenario principal · rango antes y después del IPP", "dir": "", "texto": "El rebote nocturno (Cisco, rotación hacia AMD y Broadcom) lleva al precio a la parte alta del rango, pero el 10 años sobre el 5 % y la Fed limitan las subidas. Oscilación entre 28.165 y 28.441 con el IPP (14:30) como detonante.", "gatillo": "Gatillo: rechazo en 28.441 → vuelta a 28.165; ruptura de 28.165 → 27.957" },
+    "alternativo": { "titulo": "Alternativo · ruptura alcista del rango", "dir": "up", "texto": "Un IPP suave y la idea de que la salida de Huang no cambia la demanda de IA permiten superar 28.441 y buscar 28.600–28.800.", "gatillo": "Gatillo: cierre de 1H sobre 28.441" },
+    "invalidacion": "Invalidación: cierre de 4H bajo 27.837 da el control a los bajistas (→ 27.516); cierre de 4H sobre 28.969 confirma el giro alcista de 4H."
   },
   "intermercado": [
-    { "n": "Brent", "v": "≈ 91,6", "c": "−1,2 % hoy · WTI 85,2", "dir": "dn" },
-    { "n": "Bono 10A EE. UU.", "v": "≈ 4,98 %", "c": "−1 pb · 30A 5,32 %", "dir": "dn" },
-    { "n": "Oro", "v": "≈ 3.975", "c": "−0,3 % hoy", "dir": "dn" },
-    { "n": "USD/JPY", "v": "159,7", "c": "cerca de 160 · EUR/USD 1,1077", "dir": "up" },
-    { "n": "VIX", "v": "17,49", "c": "−10,1 % (cierre miér.)", "dir": "up" },
-    { "n": "Bitcoin", "v": "≈ 73.700", "c": "−0,8 %", "dir": "dn" }
+    { "n": "Brent", "v": "95,70", "c": "−0,1 % hoy · +3,3 % ayer · WTI 88,4", "dir": "dn" },
+    { "n": "Bono 10A EE. UU.", "v": "5,10 %", "c": "+12 pb (cierre jue.) · 2A 4,88 %", "dir": "up" },
+    { "n": "Oro", "v": "≈ 3.880", "c": "−2,88 % ayer · mín. desde oct. 2025", "dir": "dn" },
+    { "n": "USD/JPY", "v": "159,91", "c": "tocó 160 · EUR/USD 1,1059", "dir": "up" },
+    { "n": "VIX", "v": "18,70", "c": "+6,9 % (cierre jue.)", "dir": "dn" },
+    { "n": "Bitcoin", "v": "≈ 71.300", "c": "≈ −3,5 % en 24 h", "dir": "dn" }
   ],
-  "globales": "Asia mixta y débil por Nvidia: Taiex −1,2 %, Hang Seng −0,9 % (24.088,41), ASX −0,4 % (9.117,00), Nikkei −0,1 % (61.224,87), Kospi plano (5.375,63) tras ceder sus ganancias, Shanghai +0,2 % (3.688,05), Topix +0,3 %. El MSCI Asia-Pacífico cae un 0,5 % tras tres días de subidas; la rupia indonesia marca mínimos históricos. Europa: futuros del Euro Stoxx 50 +0,3 %; apertura a las 09:00. Índice del dólar ≈ 102,9 (máximo de 18 meses).",
+  "globales": "Asia mixta: Taiex +1,7 %, Nikkei +0,8 % (61.283,16), Shanghai +0,2 % (3.663,71); a la baja, Hang Seng −0,9 % (23.786,48; Alibaba −6,8 % ayer), ASX −0,7 % (9.084,80) y Kospi −0,5 % (5.317,05) tras superar los 5.500. Europa cerró ayer en máximos: Stoxx 600 +0,1 % (664,01, récord), DAX +0,4 % (26.772); abre hoy a las 09:00. Índice del dólar 103,19 (máximo de 18 meses).",
   "agenda": [
-    { "h": "14:30", "e": "Peticiones semanales de subsidio de paro", "imp": "medio" },
+    { "h": "14:30", "e": "IPP de octubre (hora habitual; dato no confirmado en mis fuentes)", "imp": "medio" },
     { "h": "15:30", "e": "Apertura de Wall Street", "imp": "medio" },
-    { "h": "Todo el día", "e": "Posible comunicado del consejo de Nvidia sobre Jensen Huang", "imp": "alto" },
     { "h": "22:00", "e": "Cierre de Wall Street", "imp": "bajo" },
-    { "h": "Tras cierre", "e": "Cisco y Applied Materials: resultados", "imp": "alto" },
-    { "h": "13 nov", "e": "IPP de octubre", "imp": "medio" },
-    { "h": "Próx. semana", "e": "Nvidia: resultados", "imp": "alto" },
-    { "h": "8–9 dic", "e": "Próximo FOMC: el mercado descuenta ≈ 87–100 % de una subida de 25 pb", "imp": "alto" }
+    { "h": "Próx. semana", "e": "Nvidia: resultados (primeros con Colette Kress como CEO interina)", "imp": "alto" },
+    { "h": "26 nov", "e": "Acción de Gracias: bolsa de EE. UU. cerrada (27 nov, sesión corta)", "imp": "medio" },
+    { "h": "8–9 dic", "e": "Próximo FOMC: subida de 25 pb descontada por completo; se habla de 50 pb", "imp": "alto" }
   ],
-  "resultados": "Hoy tras el cierre: Cisco y Applied Materials. Ayer: CoreWeave (+24,7 % en la sesión); tras el cierre, Corteva a la baja. La semana que viene: Nvidia.",
+  "resultados": "Hoy: sin resultados relevantes del Nasdaq 100 (en Asia, MUFG, Sumitomo Mitsui y Mizuho). Ayer tras el cierre: Cisco (≈ +3 %, ingresos récord y guía al alza), Applied Materials (plana pese a una guía del T1 por encima de lo esperado), Cerebras (al alza) y Flowers Foods (−13 %).",
   "pesados": [
-    { "t": "NVDA", "v": "+2,87 % (miér.) · ≈ −8,6 % fuera de hora", "dir": "dn" },
+    { "t": "NVDA", "v": "−4,34 % (jue.)", "dir": "dn" },
     { "t": "AAPL", "v": "—", "dir": "" },
     { "t": "MSFT", "v": "—", "dir": "" },
     { "t": "AMZN", "v": "—", "dir": "" },
     { "t": "META", "v": "—", "dir": "" },
     { "t": "GOOGL", "v": "—", "dir": "" },
-    { "t": "TSLA", "v": "—", "dir": "" },
-    { "t": "AVGO", "v": "—", "dir": "" }
+    { "t": "TSLA", "v": "+1,69 % (jue.)", "dir": "up" },
+    { "t": "AVGO", "v": "+5,54 % (jue.)", "dir": "up" }
   ],
-  "pesados_nota": "A esta hora no hay premarket publicado de los pesos pesados y mi fuente del cierre del miércoles no recoge el resto de las 7 Magníficas: solo hay dato de Nvidia (Capp Notes y AP). Semis el miércoles: SOX +5,7 % con todos sus valores al alza.",
+  "pesados_nota": "Cierres del jueves según Capp Notes; el resto de las 7 Magníficas no aparece en mi fuente. No hay premarket publicado con hora fiable a esta hora. Semis: AMD +5,86 %, SMH −1,03 %.",
   "analisis": {
     "swing": {
       "dir": "dn",
       "marco": "Diario / 4H · días a semanas",
-      "titulo": "Neutral-bajista: vender rebotes en resistencia",
-      "texto": "Desde el récord (≈ 31.400, 6 oct) el índice ha corregido hasta 26.366 (6 nov). El rebote posterior marca mínimos crecientes (27.516), pero sigue por debajo del último máximo decreciente (28.969) y de la media rápida (29.727). Con la Fed camino de subir tipos en diciembre y el caso Nvidia abierto, la zona 28.600–28.800 es de venta mientras no se supere 28.969 en cierre diario.",
+      "titulo": "Neutral-bajista: vender en resistencia mayor",
+      "texto": "La tendencia de fondo desde el récord (≈ 31.400) sigue bajista: el rebote desde 26.366 aún no ha superado el último máximo decreciente (28.969). Con el 10 años sobre el 5 %, la Fed descontando una subida en diciembre y la incertidumbre en Nvidia antes de sus resultados, la zona 28.600–28.800 sigue siendo de venta en swing mientras no haya cierre diario sobre 28.969.",
       "entrada": "28.600–28.800 (rechazo en diario o 4H)",
       "stop": "Cierre diario sobre 28.969",
       "objetivos": ["27.837", "27.516", "26.366"],
-      "alternativa": "Alternativa alcista: cierre diario sobre 28.969 cambia el sesgo swing a alcista, con objetivos en 29.727 y 30.000."
+      "alternativa": "Alternativa alcista: cierre diario sobre 28.969 cambia el sesgo swing a alcista (→ 29.727 y 30.000)."
     },
     "intradia": {
-      "dir": "dn",
+      "dir": "",
       "marco": "15 min / 1H · solo hoy",
-      "titulo": "Bajista: vender el rebote tras el gap",
-      "texto": "Gap bajista por Nvidia. Plan: esperar un rebote hacia la zona de VWAP (28.232–28.300) y buscar rechazo para vender. No perseguir la caída si el precio llega a 28.165 sin rebotar antes. Ojo a las 14:30 (paro semanal) y a la apertura cash de las 15:30.",
-      "entrada": "28.232–28.300 (rechazo en 15 min)",
-      "stop": "28.340 (sobre el VAH en desarrollo)",
-      "objetivos": ["28.165", "27.957", "27.837"],
-      "alternativa": "Si el precio acepta sobre 28.337 en 1H, se anulan los cortos: posible vuelta a 28.441 (cierre de ayer). Compra solo con confirmación en 27.837."
+      "titulo": "Neutral: operar los extremos del rango",
+      "texto": "Sin dirección clara antes del IPP. Plan: no operar en mitad del rango (28.250–28.350). Vender un rechazo en 28.441 con objetivo en la parte baja, o comprar un rechazo en 28.165 con objetivo en la parte alta. Si el IPP rompe el rango con un cierre de 15 min fuera de él, seguir la ruptura en el retesteo.",
+      "entrada": "Venta en 28.441 / compra en 28.165 (rechazo en 15 min)",
+      "stop": "28.480 en la venta / 28.120 en la compra",
+      "objetivos": ["28.300 (mitad del rango)", "28.165 o 28.441 (extremo opuesto)"],
+      "alternativa": "Ruptura: cierre de 15 min sobre 28.441 → largos en el retesteo hacia 28.600; bajo 28.165 → cortos en el retesteo hacia 27.957."
     },
-    "nota": "Análisis propio a partir de los niveles publicados (investingLive, Oneup Trader) y la estructura de price action. No incluye tamaño de posición ni gestión de riesgo personal."
+    "nota": "Análisis propio a partir de los niveles publicados (investingLive, Oneup Trader) y la estructura de price action. Hoy no hay cotización exacta del futuro: los niveles intradía pueden necesitar ajuste en la apertura. No incluye tamaño de posición ni gestión de riesgo personal."
   },
   "aviso_horario": "",
   "fuentes": [
-    { "n": "Capp Notes (cierre del miércoles)", "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-11" },
-    { "n": "Bloomberg vía Swissinfo (futuros, Nvidia, divisas y materias primas)", "url": "https://www.swissinfo.ch/eng/us-stock-futures-fall-as-nvidia-turmoil-deepens:-markets-wrap/92367440" },
-    { "n": "Reuters vía Business Recorder (consejo de Nvidia y Fed)", "url": "https://www.brecorder.com/news/40448543/asian-stocks-fragile-nvidia-plummets-as-board-to-decide-ceos-fate" },
-    { "n": "AP vía News4Jax (Asia y Nvidia)", "url": "https://www.news4jax.com/business/2026/11/12/asian-shares-mostly-slip-as-nvidias-troubles-weigh-on-ai-stocks-despite-a-rally-on-wall-st/" },
-    { "n": "investingLive (niveles del futuro NQ)", "url": "https://investinglive.com/technical-analysis/nasdaq-futures-are-under-pressure-is-it-too-late-to-short/" },
+    { "n": "Capp Notes (cierre del jueves, Nvidia y fuera de hora)", "url": "https://cappnotes.substack.com/p/closing-look-thursday-november-12" },
+    { "n": "Saxo (futuros, bonos, Fed y divisas)", "url": "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--13-november-2026-13112026" },
+    { "n": "ChainCatcher (futuros)", "url": "https://www.chaincatcher.com/en/article/2304318" },
+    { "n": "AP vía ClickOnDetroit (Asia, crudo, divisas y Nvidia)", "url": "https://www.clickondetroit.com/business/2026/11/13/asian-shares-are-mixed-as-investors-assess-impact-of-nvidias-fallout-on-global-ai-development/" },
+    { "n": "investingLive (niveles del futuro NQ, 12 nov)", "url": "https://investinglive.com/technical-analysis/nasdaq-futures-are-under-pressure-is-it-too-late-to-short/" },
     { "n": "Oneup Trader (niveles del futuro NQ)", "url": "https://blog.oneuptrader.com/analysis/technical-analysis/nasdaq-futures-nq-technical-analysis-can-bulls-reclaim-28800/" }
   ]
 };
