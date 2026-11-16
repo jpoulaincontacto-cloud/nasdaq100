@@ -236,6 +236,21 @@ footer p{margin:0}
   }
 
   var s = document.createElement('script');
+  // Avisa de su altura a la página que lo contiene (iframe en jlminvestor.com)
+  (function () {
+    if (window.parent === window) return;
+    var last = 0;
+    function send() {
+      var h = Math.ceil(document.body.scrollHeight);
+      if (Math.abs(h - last) < 4) return;
+      last = h;
+      try { window.parent.postMessage({ nqHeight: h }, '*'); } catch (e) {}
+    }
+    window.addEventListener('load', send);
+    window.addEventListener('resize', send);
+    if (window.ResizeObserver) { new ResizeObserver(send).observe(document.body); }
+    setInterval(send, 1500);
+  })();
   s.src = 'datos.js?t=' + Date.now();
   s.onload = function () {
     try { render(window.PANEL); }
