@@ -1,144 +1,144 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
-  "fecha": "Miércoles 18 de noviembre de 2026",
+  "fecha": "Jueves 19 de noviembre de 2026",
   "actualizado": "08:10 (Madrid)",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
   "horas": [
+    { "n": "Philly Fed y paro", "v": "14:30" },
     { "n": "Apertura cash", "v": "15:30" },
-    { "n": "Actas Fed", "v": "20:00" },
-    { "n": "Cierre", "v": "22:00" }
+    { "n": "Debut Anthropic", "v": "hoy" }
   ],
   "precio": {
-    "premarket": "≈ 27.221",
-    "cambio": "≈ +145,5 · +0,54 %",
+    "premarket": "≈ 27.610,5",
+    "cambio": "≈ +423,75 · +1,56 %",
     "dir": "up",
-    "cierre_ayer": "≈ 27.075,5 (martes, futuro)",
-    "gap": "≈ +146 pts (alcista moderado)",
-    "gap_mnq": "≈ +291 $ por contrato MNQ"
+    "cierre_ayer": "≈ 27.186,75 (miércoles, futuro)",
+    "gap": "≈ +424 pts (alcista)",
+    "gap_mnq": "≈ +847 $ por contrato MNQ"
   },
   "sesgo": {
-    "dir": "",
-    "titulo": "Neutral: Nvidia bate, pero el mercado duda",
-    "confianza": 2,
-    "texto": "Nvidia batió con holgura: ingresos de 115.840 M$ (+103 % a/a; est. ≈ 109.000 M$), BPA de 2,68 $ (est. 2,48 $), centros de datos 107.600 M$ y guía del T4 de ≈ 130.000 M$ (est. ≈ 125.000 M$). El consejo descarta el regreso de Jensen Huang. La acción llegó a subir un 6 % fuera de hora y el futuro NQ más de un 1,5 %, pero se fue desinflando: Nvidia acabó cayendo un 0,5 % y el futuro sube solo ≈ 0,5 % (27.221). Asia también devolvió casi todo (el Kospi pasó de +3 % a casi plano). El S&P 500 está en mínimos desde julio, el VIX en 25 y la Fed camino de subir en diciembre (Kalshi 91 %). Hoy, actas de la Fed (20:00) y precio de la salida a bolsa de Anthropic, que cotiza mañana.",
-    "condicion": "Neutral entre 27.075 y 27.433. Aceptación sobre 27.433 → 27.705; pérdida de 27.075 (cierre de ayer) → 26.751."
+    "dir": "up",
+    "titulo": "Alcista de corto plazo (día Anthropic)",
+    "confianza": 3,
+    "texto": "El futuro NQ sube ≈ 1–1,6 % (≈ 27.610) en el día del debut de Anthropic en el Nasdaq: fijó el precio en 83 $ por acción, por encima del rango de 70–78 $, y capta 81.300 M$, la mayor salida a bolsa de la historia (valoración de ≈ 1,5 billones de $ totalmente diluida). Ayer el Nasdaq 100 subió un 0,42 % con Amazon (+3,8 %) y Broadcom (+3,6 %), mientras el Dow caía un 1,1 % y el S&P 500 encadenaba su quinta caída. En contra: las actas de la Fed muestran que casi todos los miembros ven apropiadas más subidas y Waller plantea 50 pb en diciembre; Asia, débil en tecnología (Taiex −3,1 %, Hang Seng −1,9 %).",
+    "condicion": "Alcista mientras el precio aguante sobre 27.433. Aceptación sobre 27.705 → 28.033 y 28.279; pérdida de 27.433 cierra el gap hacia 27.186."
   },
   "ayer": {
-    "titulo": "Qué pasó ayer · martes 17 nov",
-    "etiqueta": "Nasdaq −0,74 %",
-    "dir": "dn",
-    "resumen": "Otra caída generalizada antes de Nvidia: los 11 sectores cerraron en rojo y solo subieron 75 valores del S&P 500. Nasdaq 100 −0,72 % (27.001,79; el mejor de los grandes índices), Nasdaq −0,74 % (24.328,38), S&P 500 −1,03 % (7.340,53, mínimo desde julio), Dow −1,64 % (50.759,42; −1.700 puntos en dos días) y Russell 2000 −1,50 % (2.701,87). Lo menos malo: energía (−0,52 %), industriales (−0,55 %) y consumo discrecional (−0,89 %); lo peor: financieras (−1,91 %), utilities (−1,59 %) e inmobiliario (−1,49 %). Venta en software (IGV −3,29 %; Salesforce −9,45 %, Microsoft −2,27 %). Datos: ventas minoristas +0,2 % (est. +0,1 %), producción industrial +0,3 % y confianza de constructores 25, mínimo de 14 años. Bono a 10 años 5,10 %, Brent 93,14 $, oro 3.851,90 $, VIX 25,46 (+11 %), índice del dólar 103,55, bitcoin ≈ 64.200. Futuro NQ: cierre ≈ 27.075,5; máx./mín.: —.",
+    "titulo": "Qué pasó ayer · miércoles 18 nov",
+    "etiqueta": "Nasdaq +0,42 %",
+    "dir": "up",
+    "resumen": "Sesión dividida antes de Anthropic: el Nasdaq subió mientras el Dow caía con fuerza. Nasdaq 100 +0,42 % (27.116,26), Nasdaq +0,42 % (24.429,89), S&P 500 −0,23 % (7.323,63, quinta caída seguida), Dow −1,11 % (50.198,17) y Russell 2000 +0,46 % (2.714,31). Lideraron consumo discrecional (+1,79 %), tecnología (+0,34 %) y comunicaciones (+0,30 %); a la cola, energía (−3,27 %), salud (−2,20 %) y financieras (−1,14 %). Amazon +3,82 %, Broadcom +3,64 %, Nvidia −2,89 % pese a batir. Actas de la Fed: casi todos los miembros ven «probablemente apropiadas» más subidas; Waller habla de «sorprender» con 50 pb. Bono a 10 años 5,07 % (−3 pb), WTI −3,2 % (83,26 $), Brent 91,95 $, oro −3,5 % (3.728,80 $, mínimo desde septiembre de 2025), VIX 24,56, índice del dólar 103,80, bitcoin ≈ 62.300 (−4 %). Futuro NQ: cierre ≈ 27.186,75; máx./mín.: —.",
     "indices": [
-      { "n": "Nasdaq", "v": "−0,74 %", "dir": "dn" },
-      { "n": "S&P 500", "v": "−1,03 %", "dir": "dn" },
-      { "n": "Dow", "v": "−1,64 %", "dir": "dn" },
-      { "n": "Russell 2000", "v": "−1,50 %", "dir": "dn" }
+      { "n": "Nasdaq", "v": "+0,42 %", "dir": "up" },
+      { "n": "S&P 500", "v": "−0,23 %", "dir": "dn" },
+      { "n": "Dow", "v": "−1,11 %", "dir": "dn" },
+      { "n": "Russell 2000", "v": "+0,46 %", "dir": "up" }
     ]
   },
   "noticias": [
-    { "t": "Nvidia bate: ingresos 115.840 M$ (+103 %), BPA 2,68 $ y guía del T4 de ≈ 130.000 M$; el consejo descarta el regreso de Huang", "v": "NVDA ≈ −0,5 %", "dir": "" },
-    { "t": "El entusiasmo se desinfla: Nvidia pasó de +6 % a −0,5 % fuera de hora y el Kospi devolvió casi todo su +3 %", "v": "NQ ≈ +0,5 %", "dir": "up" },
-    { "t": "Anthropic fija hoy el precio de su salida a bolsa (en la parte alta del rango o por encima, según Bloomberg); cotiza mañana como ANT", "v": "≈ 1,4 bill. $", "dir": "" },
-    { "t": "Hoy actas de la Fed (20:00); Kalshi da un 91 % a una subida de 25 pb el 9 de diciembre", "v": "91 %", "dir": "dn" },
-    { "t": "EE. UU. ataca una lanzadera de misiles iraní en la isla de Qeshm tras un ataque con drones a un radar en Baréin", "v": "Brent ≈ 92,6 $", "dir": "dn" },
-    { "t": "Nuevas licencias de exportación de chips de IA al Sudeste Asiático y Brasil, en vigor desde mañana", "v": "19 nov", "dir": "dn" }
+    { "t": "Anthropic fija su salida a bolsa en 83 $ por acción (rango 70–78 $) y capta 81.300 M$, la mayor de la historia; hoy cotiza en el Nasdaq como ANT", "v": "≈ 1,5 bill. $", "dir": "up" },
+    { "t": "Actas de la Fed: casi todos ven apropiadas más subidas; Waller plantea 50 pb en diciembre para «sorprender»", "v": "Kalshi 91 %", "dir": "dn" },
+    { "t": "Palo Alto Networks bate, eleva su guía y compra Applied Compute por 4.500 M$", "v": "PANW ≈ +8 %", "dir": "up" },
+    { "t": "Nvidia cae un 2,9 % pese a batir: el mercado vende la buena noticia", "v": "NVDA −2,89 %", "dir": "dn" },
+    { "t": "Asia tecnológica, a la baja: Taiex −3,1 %, Hang Seng −1,9 %; hoy entran en vigor las nuevas licencias de exportación de chips", "v": "Taiex −3,1 %", "dir": "dn" },
+    { "t": "Hoy Walmart antes de la apertura; tras el cierre, Intuit, Ross, Gap, Keysight y Elastic", "v": "WMT", "dir": "" }
   ],
-  "noticias_nota": "Futuro NQ: Reuters vía Yahoo Finance (≈ 05:00 Madrid, 27.221, +145,5, +0,54 %); antes llegó a subir ≈ 1,5 % (CNBC TV18). Cierres: Capp Notes. Nvidia: Capp Notes, CNBC TV18 y Reuters. El oro del widget de Yahoo (3.780 $, −2,18 %) no tiene hora: lo tomo con cautela.",
+  "noticias_nota": "Futuro NQ: cotización de Yahoo Finance (27.610,5, +423,75, +1,56 %; sin hora exacta); el texto del mismo artículo (07:10 Madrid) daba +0,97 %. El dato puede variar bastante hasta la apertura. Cierres: Capp Notes. Asia: AP (≈ 06:00 Madrid).",
   "estructura": {
-    "h4": "Bajista. El lunes el precio perdió el mínimo creciente de 27.516 y ayer siguió bajando hasta cerrar en ≈ 27.075, por debajo de la zona 27.100–27.166. El rebote nocturno tras Nvidia se ha desinflado y por ahora no recupera ni el POC del lunes (27.433). Sigue la secuencia de máximos y mínimos decrecientes desde el récord; los soportes mayores están en 26.751 y 26.366.",
-    "h1": "Rebote nocturno con mecha: el pico tras Nvidia (≈ +1,5 %) se vendió y el precio vuelve a ≈ 27.220. Rango 27.075–27.433: un cierre de 1H sobre 27.433 sería BOS alcista de corto plazo; perder 27.075 devolvería el control a los bajistas. Máx./mín. nocturnos exactos: —."
+    "h4": "Rebote dentro de una tendencia bajista. Tras perder 27.516 el lunes, el precio ha marcado un suelo en la zona 27.075–27.186 (martes y miércoles) y esta madrugada rebota hacia 27.600, cerca del VAH del lunes (27.705). Superar 27.705 sería el primer máximo creciente en una semana y abriría 28.033–28.279. La tendencia de fondo sigue siendo bajista mientras no supere 28.279 (máximo del lunes) y 28.441.",
+    "h1": "Alcista de corto plazo: BOS alcista nocturno sobre 27.433 (POC del lunes) con máximos crecientes. Un retroceso que respete 27.433 sería de compra; perder 27.433 devolvería el precio al rango 27.075–27.433. Máx./mín. nocturnos: —."
   },
   "fuerza": [
-    { "n": "Bill.com (mar.)", "v": "+12,58 %", "pct": 100, "dir": "up" },
-    { "n": "Nvidia (máx. fuera de hora)", "v": "+6 %", "pct": 48, "dir": "up" },
-    { "n": "Futuro NQ (noche)", "v": "+0,54 %", "pct": 4, "dir": "up" },
-    { "n": "Energía (mar.)", "v": "−0,52 %", "pct": 4, "dir": "dn" },
-    { "n": "Nasdaq 100 (mar.)", "v": "−0,72 %", "pct": 6, "dir": "dn" },
-    { "n": "S&P 500 (mar.)", "v": "−1,03 %", "pct": 8, "dir": "dn" },
-    { "n": "Dow (mar.)", "v": "−1,64 %", "pct": 13, "dir": "dn" },
-    { "n": "Financieras (mar.)", "v": "−1,91 %", "pct": 15, "dir": "dn" },
-    { "n": "Software IGV (mar.)", "v": "−3,29 %", "pct": 26, "dir": "dn" },
-    { "n": "Salesforce (mar.)", "v": "−9,45 %", "pct": 75, "dir": "dn" }
+    { "n": "Palo Alto (fuera de hora)", "v": "≈ +8 %", "pct": 100, "dir": "up" },
+    { "n": "Amazon (miér.)", "v": "+3,82 %", "pct": 48, "dir": "up" },
+    { "n": "Broadcom (miér.)", "v": "+3,64 %", "pct": 46, "dir": "up" },
+    { "n": "Consumo discrecional (miér.)", "v": "+1,79 %", "pct": 22, "dir": "up" },
+    { "n": "Futuro NQ (noche)", "v": "≈ +1,56 %", "pct": 20, "dir": "up" },
+    { "n": "Nasdaq 100 (miér.)", "v": "+0,42 %", "pct": 5, "dir": "up" },
+    { "n": "Dow (miér.)", "v": "−1,11 %", "pct": 14, "dir": "dn" },
+    { "n": "Hang Seng (hoy)", "v": "−1,9 %", "pct": 24, "dir": "dn" },
+    { "n": "Nvidia (miér.)", "v": "−2,89 %", "pct": 36, "dir": "dn" },
+    { "n": "Taiex (hoy)", "v": "−3,1 %", "pct": 39, "dir": "dn" }
   ],
-  "fuerza_nota": "Sectores, índices y valores del martes: Capp Notes; Nvidia fuera de hora: CNBC TV18; futuro NQ: Reuters. Ayer los 11 sectores cayeron; el software fue lo peor.",
+  "fuerza_nota": "Sectores, índices y valores del miércoles: Capp Notes; Asia, hoy (AP); futuro NQ: Yahoo Finance. Ayer energía (−3,27 %) y salud (−2,20 %) fueron lo peor.",
   "niveles": [
-    { "n": "Resistencia 4 · máx. del lunes", "v": "28.279", "tipo": "r" },
-    { "n": "Resistencia 3 · VAH del lunes", "v": "27.705", "tipo": "r" },
-    { "n": "Resistencia 2 · POC del lunes", "v": "27.433", "tipo": "r" },
-    { "n": "Resistencia 1 · cierre / mín. del lunes", "v": "27.235–27.285", "tipo": "r" },
-    { "n": "Precio premarket (≈ 05:00 Madrid)", "v": "≈ 27.221", "tipo": "precio" },
-    { "n": "Soporte 1 · antiguo soporte del 5 nov", "v": "27.100–27.166", "tipo": "s" },
-    { "n": "Cierre de ayer (futuro)", "v": "≈ 27.075,5", "tipo": "ref" },
-    { "n": "Soporte 2 · mínimo del 9 nov", "v": "26.751", "tipo": "s" },
-    { "n": "Soporte 3 · mínimo de la corrección (6 nov)", "v": "≈ 26.366", "tipo": "s" }
+    { "n": "Resistencia 3 · máx. del lunes", "v": "28.279", "tipo": "r" },
+    { "n": "Resistencia 2 · cierre del 13 nov (est.)", "v": "≈ 28.033", "tipo": "r" },
+    { "n": "Resistencia 1 · VAH del lunes", "v": "27.705", "tipo": "r" },
+    { "n": "Precio premarket", "v": "≈ 27.610,5", "tipo": "precio" },
+    { "n": "Soporte 1 · POC del lunes", "v": "27.433", "tipo": "s" },
+    { "n": "Soporte 2 · mín. / cierre del lunes", "v": "27.235–27.285", "tipo": "s" },
+    { "n": "Cierre de ayer (futuro)", "v": "≈ 27.186,75", "tipo": "ref" },
+    { "n": "Soporte 3 · cierre del martes", "v": "≈ 27.075", "tipo": "s" },
+    { "n": "Soporte 4 · mínimo del 9 nov", "v": "26.751", "tipo": "s" }
   ],
-  "niveles_nota": "No he encontrado niveles del futuro NQ publicados hoy ni el máx./mín. de ayer: se usan los del lunes (alphainvestment) y de semanas anteriores. Cierre del martes calculado a partir de la cotización y la variación de Reuters. RSI: —.",
+  "niveles_nota": "No he encontrado niveles del futuro NQ publicados hoy ni el máx./mín. de ayer: se usan los del lunes 16 (alphainvestment) y los cierres de los días anteriores. Cierre del miércoles calculado a partir de la cotización y la variación de Yahoo. RSI: —.",
   "escenarios": {
-    "principal": { "titulo": "Escenario principal · rango con las actas de la Fed", "dir": "", "texto": "El mercado digiere Nvidia sin entusiasmo: el precio oscila entre 27.075 y 27.433 hasta las actas de la Fed (20:00). El tono de las actas (más o menos agresivo sobre la subida de diciembre) y el precio de Anthropic marcarán el cierre.", "gatillo": "Gatillo: rechazo en 27.433 → vuelta a 27.100; ruptura de 27.075 → 26.751" },
-    "alternativo": { "titulo": "Alternativo · Nvidia reactiva la IA", "dir": "up", "texto": "La sesión cash recupera el entusiasmo de la noche (centros de datos +100 %, guía de 130.000 M$): el precio supera 27.433 y busca 27.705, con los semis tirando del índice.", "gatillo": "Gatillo: cierre de 1H sobre 27.433" },
-    "invalidacion": "Invalidación: cierre de 4H sobre 27.705 cambia el sesgo a alcista de corto plazo (→ 28.033–28.279); cierre de 4H bajo 26.751 reactiva la caída (→ 26.366)."
+    "principal": { "titulo": "Escenario principal · el debut de Anthropic tira de la IA", "dir": "up", "texto": "El apetito por la mayor salida a bolsa de la historia arrastra al sector: el precio aguanta sobre 27.433, supera 27.705 y busca 28.033. Datos a las 14:30 (Philly Fed y paro) y Walmart antes de la apertura.", "gatillo": "Gatillo: cierre de 15 min sobre 27.705 tras la apertura cash (15:30)" },
+    "alternativo": { "titulo": "Alternativo · «compra el rumor, vende la noticia»", "dir": "dn", "texto": "Si Anthropic abre muy por encima del precio y luego se desinfla, o si el mercado vuelve a fijarse en la Fed (50 pb), el gap se vende: el precio pierde 27.433 y vuelve a 27.186–27.075.", "gatillo": "Gatillo: cierre de 15 min bajo 27.433" },
+    "invalidacion": "Invalidación: cierre de 4H bajo 27.075 reactiva la tendencia bajista (→ 26.751); cierre de 4H sobre 28.279 confirma el giro alcista de 4H (→ 28.441–28.969)."
   },
   "intermercado": [
-    { "n": "Brent", "v": "≈ 92,6", "c": "−0,6 % hoy · WTI ≈ 84,6–86,0", "dir": "dn" },
-    { "n": "Bono 10A EE. UU.", "v": "≈ 5,08 %", "c": "−2 pb · 2A 4,80 %", "dir": "dn" },
-    { "n": "Oro", "v": "3.851,90", "c": "cierre mar. (−0,03 %)", "dir": "" },
-    { "n": "USD/JPY", "v": "159,41–159,55", "c": "plano · índice del dólar 103,60", "dir": "" },
-    { "n": "VIX", "v": "25,46", "c": "+11,1 % (cierre mar.)", "dir": "dn" },
-    { "n": "Bitcoin", "v": "≈ 64.200", "c": "−1 % · cerca de mínimos de 3 meses", "dir": "dn" }
+    { "n": "Brent", "v": "≈ 92,1", "c": "+0,1–0,2 % hoy · WTI ≈ 82,2–83,0", "dir": "up" },
+    { "n": "Bono 10A EE. UU.", "v": "5,07 %", "c": "−3 pb (cierre miér.) · 2A 4,80 %", "dir": "dn" },
+    { "n": "Oro", "v": "≈ 3.733", "c": "−0,2 % hoy · −3,5 % ayer", "dir": "dn" },
+    { "n": "USD/JPY", "v": "158,60", "c": "desde 159,35 · EUR/USD 1,0961", "dir": "dn" },
+    { "n": "VIX", "v": "24,56", "c": "−3,5 % (cierre miér.)", "dir": "up" },
+    { "n": "Bitcoin", "v": "≈ 62.300", "c": "−4 % (miér.)", "dir": "dn" }
   ],
-  "globales": "Asia empezó al alza por Nvidia (Kospi +3,1 %, Taiex +1,1 %, Nikkei +1 %) pero devolvió casi todo: según Reuters, el MSCI Asia-Pacífico sin Japón cae un 0,1 % (cinco días seguidos a la baja) y el Nikkei −0,3 %. Futuros del Hang Seng ≈ −0,3 %. Europa abre a las 09:00. Índice del dólar 103,60 (máximo desde abril de 2025).",
+  "globales": "Asia mixta y débil en tecnología: Taiex −3,1 %, Hang Seng −1,9 % (22.854,15), ASX −1,1 % (8.728,10), Kospi −0,7 % (5.033,27), Shanghai −0,4 % (3.571,99); Nikkei +0,1 % (59.084,79). Europa abre a las 09:00. Índice del dólar 103,80 (máximo del año en la sesión de ayer).",
   "agenda": [
+    { "h": "Antes apertura", "e": "Walmart: resultados", "imp": "medio" },
+    { "h": "14:30", "e": "Philly Fed de noviembre y peticiones semanales de subsidio de paro", "imp": "medio" },
     { "h": "15:30", "e": "Apertura de Wall Street", "imp": "medio" },
-    { "h": "20:00", "e": "Actas de la reunión de la Fed de octubre (hora habitual)", "imp": "alto" },
-    { "h": "22:00", "e": "Cierre de Wall Street", "imp": "bajo" },
-    { "h": "Tras cierre", "e": "Anthropic fija el precio de su salida a bolsa", "imp": "alto" },
-    { "h": "19 nov", "e": "Debut de Anthropic en el Nasdaq (ANT) · entran en vigor nuevas licencias de exportación de chips · Trump–Xi–Putin en la APEC", "imp": "alto" },
-    { "h": "Esta semana", "e": "Walmart, Home Depot y Target: resultados (fechas: —)", "imp": "medio" },
+    { "h": "Sesión", "e": "Debut de Anthropic (ANT) en el Nasdaq (hora de la primera cotización: —)", "imp": "alto" },
+    { "h": "16:00", "e": "Indicadores adelantados", "imp": "bajo" },
+    { "h": "Tras cierre", "e": "Intuit, Ross Stores, Gap, Keysight y Elastic: resultados", "imp": "medio" },
     { "h": "26 nov", "e": "Acción de Gracias: bolsa de EE. UU. cerrada (27 nov, sesión corta)", "imp": "medio" },
-    { "h": "8–9 dic", "e": "Próximo FOMC: Kalshi da un 91 % a una subida de 25 pb", "imp": "alto" }
+    { "h": "8–9 dic", "e": "Próximo FOMC: Kalshi da un 91 % a una subida de 25 pb; Waller plantea 50 pb", "imp": "alto" }
   ],
-  "resultados": "Ayer tras el cierre: Nvidia (bate en ingresos, BPA y guía; acción ≈ −0,5 % tras subir un 6 %), Palo Alto Networks (resultado: —) y Dolby (≈ −3 %, guía floja). Hoy: no he encontrado resultados relevantes del Nasdaq 100 confirmados.",
+  "resultados": "Hoy: Walmart y Alibaba (antes de la apertura, hora: —); tras el cierre, Intuit, Ross Stores, Gap, Keysight y Elastic. Ayer tras el cierre: Palo Alto Networks (≈ +8 %, bate y eleva su guía).",
   "pesados": [
-    { "t": "NVDA", "v": "−0,44 % (mar.) · ≈ −0,5 % fuera de hora", "dir": "dn" },
+    { "t": "NVDA", "v": "−2,89 % (miér.)", "dir": "dn" },
     { "t": "AAPL", "v": "—", "dir": "" },
-    { "t": "MSFT", "v": "−2,27 % (mar.)", "dir": "dn" },
-    { "t": "AMZN", "v": "—", "dir": "" },
+    { "t": "MSFT", "v": "—", "dir": "" },
+    { "t": "AMZN", "v": "+3,82 % (miér.)", "dir": "up" },
     { "t": "META", "v": "—", "dir": "" },
     { "t": "GOOGL", "v": "—", "dir": "" },
     { "t": "TSLA", "v": "—", "dir": "" },
-    { "t": "AVGO", "v": "—", "dir": "" }
+    { "t": "AVGO", "v": "+3,64 % (miér.)", "dir": "up" }
   ],
-  "pesados_nota": "Cierres del martes según Capp Notes; Nvidia fuera de hora según Reuters. El resto de las 7 Magníficas no aparece en mis fuentes. Software ayer: IGV −3,29 %, Salesforce −9,45 %, Oracle −3,43 %, Palantir −2,39 %.",
+  "pesados_nota": "Cierres del miércoles según Capp Notes; el resto de las 7 Magníficas no aparece en mi fuente. No hay premarket publicado con hora fiable a esta hora.",
   "analisis": {
     "swing": {
       "dir": "dn",
       "marco": "Diario / 4H · días a semanas",
-      "titulo": "Bajista: Nvidia no ha cambiado la tendencia",
-      "texto": "Pese a unos resultados muy buenos, el mercado vendió el rebote de Nvidia: es una señal de debilidad (buena noticia que no sube). La tendencia diaria sigue bajista desde el récord, con el S&P 500 en mínimos desde julio, el 10 años sobre el 5 % y la Fed camino de subir. Rebotes hacia 27.433–27.705 son de venta mientras no haya cierre diario sobre 28.279.",
-      "entrada": "27.433–27.705 (rechazo en 4H)",
-      "stop": "Cierre diario sobre 28.279",
-      "objetivos": ["26.751", "26.366", "26.000"],
-      "alternativa": "Alternativa alcista: un cierre diario sobre 27.705 tras las actas y el debut de Anthropic pondría el sesgo en neutral (→ 28.279)."
+      "titulo": "Neutral-bajista: el rebote aún no cambia la tendencia",
+      "texto": "La tendencia diaria sigue bajista desde el récord, con el S&P 500 en cinco caídas seguidas y la Fed hablando de 50 pb. El debut de Anthropic puede dar un impulso de corto plazo, pero mientras el precio no supere 28.279 (máximo del lunes) los rebotes hacia 28.033–28.279 siguen siendo zonas de venta en swing.",
+      "entrada": "28.033–28.279 (rechazo en 4H)",
+      "stop": "Cierre diario sobre 28.441",
+      "objetivos": ["27.433", "27.075", "26.751"],
+      "alternativa": "Alternativa alcista: cierre diario sobre 28.441 cambia el sesgo swing a alcista (→ 28.969 y 29.727)."
     },
     "intradia": {
-      "dir": "",
+      "dir": "up",
       "marco": "15 min / 1H · solo hoy",
-      "titulo": "Neutral: rango hasta las actas",
-      "texto": "Gap alcista moderado que ya se ha desinflado. Plan: operar el rango 27.075–27.433 (venta en rechazo de 27.433, compra en rechazo de 27.075–27.100) con poco tamaño y reducir antes de las 20:00 (actas de la Fed).",
-      "entrada": "Venta en 27.433 / compra en 27.075–27.100 (rechazo en 15 min)",
-      "stop": "27.480 en la venta / 27.030 en la compra",
-      "objetivos": ["27.250 (mitad del rango)", "27.075 o 27.433 (extremo opuesto)"],
-      "alternativa": "Ruptura: cierre de 15 min sobre 27.433 → largos en el retesteo hacia 27.705; bajo 27.075 → cortos en el retesteo hacia 26.751."
+      "titulo": "Alcista: comprar retrocesos sobre el POC",
+      "texto": "Gap alcista con el día de Anthropic. Plan: no perseguir la apertura; esperar un retroceso a 27.433–27.500 que aguante en 15 min para comprar, o una ruptura limpia de 27.705 con retesteo. Cuidado con el momento en que empiece a cotizar Anthropic: puede mover el índice en ambos sentidos.",
+      "entrada": "27.433–27.500 (rechazo alcista en 15 min) o retesteo de 27.705",
+      "stop": "27.380 (bajo el POC del lunes)",
+      "objetivos": ["27.705", "28.033", "28.279"],
+      "alternativa": "Si el precio cierra 15 min bajo 27.433, se anulan los largos: posible cierre del gap hacia 27.186."
     },
-    "nota": "Análisis propio a partir de los niveles publicados (alphainvestment y semanas anteriores) y la estructura de price action. No incluye tamaño de posición ni gestión de riesgo personal."
+    "nota": "Análisis propio a partir de los niveles publicados (alphainvestment y días anteriores) y la estructura de price action. La cotización del futuro varía entre fuentes (+0,97 % a +1,56 %). No incluye tamaño de posición ni gestión de riesgo personal."
   },
   "aviso_horario": "",
   "fuentes": [
-    { "n": "Capp Notes (cierre del martes y Nvidia)", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-17" },
-    { "n": "Reuters vía Yahoo Finance (futuros, Asia, divisas y Anthropic)", "url": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-set-snap-losing-014340794.html" },
-    { "n": "CNBC TV18 vía TradingView (Nvidia y Asia)", "url": "https://www.tradingview.com/news/cnbctv:352a14e2e094b:0/" },
-    { "n": "Nvidia · nota de resultados (SEC)", "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm" },
+    { "n": "Capp Notes (cierre del miércoles, Fed y Anthropic)", "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-18" },
+    { "n": "Yahoo Finance (futuros, agenda y materias primas)", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-061052747.html" },
+    { "n": "AP vía WSLS (Asia, divisas y Anthropic)", "url": "https://www.wsls.com/business/2026/11/19/asian-stocks-are-mixed-and-us-futures-climb-ahead-of-anthropics-blockbuster-ipo/" },
+    { "n": "CNBC (salida a bolsa de Anthropic)", "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html" },
     { "n": "alphainvestment (niveles del futuro NQ, 16 nov)", "url": "https://github.com/alphainvestment/Nasdaq/releases/tag/nasdaq-2026-11-17" }
   ]
 };
