@@ -1,7 +1,7 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
-  "fecha": "Miércoles 25 de noviembre de 2026",
-  "actualizado": "08:10 (Madrid)",
+  "fecha": "Jueves 26 de noviembre de 2026",
+  "actualizado": "08:07 (Madrid) · datos del miércoles 25",
   "contrato": "MNQZ26",
   "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
   "horas": [
@@ -134,7 +134,7 @@ window.PANEL = {
     },
     "nota": "Análisis propio a partir de los niveles de días anteriores (investingLive) y la estructura de price action. Volatilidad alta (VIX 26) y datos clave a las 14:30: conviene reducir tamaño. No incluye tamaño de posición ni gestión de riesgo personal."
   },
-  "aviso_horario": "Semana de Acción de Gracias: mañana, jueves 26, la bolsa de EE. UU. está cerrada y el viernes 27 cierra antes, a las 19:00 (Madrid).",
+  "aviso_horario": "MERCADO CERRADO HOY: Acción de Gracias, la bolsa de EE. UU. no abre el jueves 26 (los futuros tienen sesión reducida). El resto del panel muestra los datos del miércoles 25. Mañana, viernes 27, sesión corta con cierre a las 19:00 (Madrid).",
   "fuentes": [
     { "n": "Capp Notes (cierre del martes)", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24" },
     { "n": "Yahoo Finance (futuros, agenda y materias primas)", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-060617625.html" },
