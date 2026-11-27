@@ -1,145 +1,144 @@
 /* Datos del panel. La tarea diaria reescribe SOLO este fichero. */
 window.PANEL = {
-  "fecha": "Jueves 26 de noviembre de 2026",
-  "actualizado": "08:07 (Madrid) · datos del miércoles 25",
+  "fecha": "Viernes 27 de noviembre de 2026",
+  "actualizado": "08:10 (Madrid)",
   "contrato": "MNQZ26",
-  "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (rollover a MNQH27 a mediados de diciembre)",
+  "contrato_nombre": "Micro E-mini Nasdaq-100 · dic. 2026 (último día de negociación: 18 dic; rollover a MNQH27 unos días antes)",
   "horas": [
-    { "n": "PCE, PIB y paro", "v": "14:30" },
+    { "n": "Balanza comercial", "v": "14:30" },
     { "n": "Apertura cash", "v": "15:30" },
-    { "n": "Cierre", "v": "22:00" }
+    { "n": "Cierre (corto)", "v": "19:00" }
   ],
   "precio": {
-    "premarket": "≈ 25.897,5",
-    "cambio": "≈ −378,25 · −1,44 %",
-    "dir": "dn",
-    "cierre_ayer": "≈ 26.275,75 (martes, futuro)",
-    "gap": "≈ −378 pts (bajista)",
-    "gap_mnq": "≈ −757 $ por contrato MNQ"
+    "premarket": "≈ 26.571",
+    "cambio": "≈ +470 · +1,8 % (sobre el cierre festivo del jueves)",
+    "dir": "up",
+    "cierre_ayer": "≈ 26.101 (jueves, sesión festiva) · 26.013 (miércoles)",
+    "gap": "≈ +470 pts (≈ +558 sobre el miércoles, alcista)",
+    "gap_mnq": "≈ +940 $ por contrato MNQ"
   },
   "sesgo": {
-    "dir": "dn",
-    "titulo": "Bajista: vuelve la venta de la IA",
-    "confianza": 3,
-    "texto": "El rebote por la vuelta de Huang se ha deshecho en un día: ayer el Nasdaq 100 cayó un 1,99 % (26.214) con Nvidia −5,9 %, SOXX −8,3 % y Micron −11 %, mientras el Dow superaba por primera vez los 50.000 (rotación a salud y consumo básico). Anthropic cerró por debajo de su precio de salida (81,90 $). Esta madrugada el futuro NQ cae ≈ 1,4 % (≈ 25.898) y Asia se hunde en tecnología: Taiex −6 %, Kospi −5,6 %, Nikkei −3,6 % (SoftBank −15 %, Tokyo Electron y Advantest −13 %). Además, según Bloomberg, EE. UU. prepara nuevos aranceles a China, la UE y otra docena de economías. Hoy, a las 14:30, PCE, PIB, pedidos de bienes duraderos y paro, todo junto, en víspera de Acción de Gracias.",
-    "condicion": "Bajista mientras el precio no recupere 26.000–26.275. Pérdida de 25.611 → 25.126 y 24.977; recuperar 26.366 neutraliza la caída."
+    "dir": "up",
+    "titulo": "Alcista de corto plazo (sesión corta)",
+    "confianza": 2,
+    "texto": "El miércoles el Nasdaq 100 llegó a caer ≈ 4,6 % por la mañana (futuro en 25.027,5, cerca del mínimo del ciclo) y cerró solo −0,64 % (26.047): una fuerte reversión al alza con compras en caída. En la sesión festiva y esta madrugada el futuro NQ sube ≈ 1,8 % (≈ 26.571) y Asia acompaña (Kospi +4,2 %, Shanghai +3,2 %, Nikkei +2 %, Hang Seng +2,1 %). Pero ojo: hoy la sesión es corta (cierre a las 19:00 Madrid) y con poco volumen, el PCE subyacente salió por encima (3,3 %), la subida de la Fed de diciembre está casi descontada y EE. UU. propone nuevos aranceles (Sección 301) a 14 socios. El precio está justo en la zona de resistencia que marca la estructura diaria (26.351).",
+    "condicion": "Alcista mientras aguante 26.146–26.170 (pivote alcista). Aceptación sobre 26.351 rompe la secuencia de máximos decrecientes → 26.451–26.514 y 26.569–26.603; pérdida de 26.146 → 25.905–26.011."
   },
   "ayer": {
-    "titulo": "Qué pasó ayer · martes 24 nov",
-    "etiqueta": "Nasdaq −1,48 %",
+    "titulo": "Qué pasó el miércoles · 25 nov (jueves cerrado)",
+    "etiqueta": "Nasdaq −0,62 %",
     "dir": "dn",
-    "resumen": "La IA devolvió buena parte del rally del lunes mientras el Dow cerraba por primera vez por encima de 50.000. Nasdaq 100 −1,99 % (26.214,17), Nasdaq −1,48 % (23.733,54), S&P 500 −0,50 % (7.201,09; octava caída en nueve sesiones), Dow +0,85 % (50.018,70) y Russell 2000 +0,57 % (2.684,94). Lideraron salud (+2,95 %; Sanofi compra Insmed por 41.000 M$), consumo básico (+1,66 %) e inmobiliario (+1,31 %); a la cola, tecnología (−3,26 %) e industriales (−0,53 %). Nvidia −5,86 %, Broadcom −3,98 %, Micron −11,01 %, SOXX −8,27 %; Anthropic −6,54 % (81,90 $, bajo su precio de salida de 83 $). Confianza del consumidor 103,3 (est. 92,2). Bono a 10 años 4,90 %, Brent 91,40 $ (+2,3 %), oro −2,6 % (3.555 $), índice del dólar 103,83, VIX 26,36, bitcoin ≈ 59.900. Fuera de hora: HP ≈ +9 %, Dell ≈ +4 % (ingresos récord de 54.900 M$), Workday y Autodesk ≈ −4 %. Futuro NQ: cierre ≈ 26.275,75; máx./mín.: —.",
+    "resumen": "Gran reversión al alza en víspera de Acción de Gracias: el Nasdaq llegó a caer un 4,6 % y el S&P 500 un 3,2 %, pero cerraron casi planos. Nasdaq 100 −0,64 % (26.046,90), Nasdaq −0,62 % (23.585,80), S&P 500 −0,25 % (7.182,78), Dow +0,33 % (50.182,95; borró una caída de más de 1.100 puntos) y Russell 2000 +0,71 % (2.704,06). Amplitud positiva: 370 valores al alza y 128 a la baja. Lideraron materiales (+2,07 %), inmobiliario (+0,92 %) y comunicaciones (+0,89 %); a la cola, tecnología (−0,83 %), salud (−0,56 %) y consumo discrecional (−0,20 %). Nvidia −3,91 % (S&P Global puso su rating AA en vigilancia negativa), Amazon −3,12 %, Alphabet −2,13 %, Meta +3,40 %; Anthropic +1,07 % (82,79 $). Datos: PCE 3,8 % a/a (en línea), subyacente 3,3 % (est. 3,2 %); PIB del T3 revisado al 4,3 %. Bono a 10 años 4,85 % (−6 pb), Brent 94,61 $ (+3,5 %; ataque hutí a la refinería saudí de Ras Tanura), oro 3.534,70 $, VIX 28,29 (llegó a superar 34), índice del dólar 103,71, bitcoin ≈ 60.100. Futuro NQ: cierre 26.013 (−1 %), máx. 26.350,75, mín. 25.027,5.",
     "indices": [
-      { "n": "Nasdaq", "v": "−1,48 %", "dir": "dn" },
-      { "n": "S&P 500", "v": "−0,50 %", "dir": "dn" },
-      { "n": "Dow", "v": "+0,85 %", "dir": "up" },
-      { "n": "Russell 2000", "v": "+0,57 %", "dir": "up" }
+      { "n": "Nasdaq", "v": "−0,62 %", "dir": "dn" },
+      { "n": "S&P 500", "v": "−0,25 %", "dir": "dn" },
+      { "n": "Dow", "v": "+0,33 %", "dir": "up" },
+      { "n": "Russell 2000", "v": "+0,71 %", "dir": "up" }
     ]
   },
   "noticias": [
-    { "t": "Se deshace el rebote de Huang: Nvidia −5,9 %, Micron −11 % y SOXX −8,3 % por las dudas sobre el gasto en centros de datos (HPE)", "v": "SOXX −8,27 %", "dir": "dn" },
-    { "t": "Asia se hunde en tecnología: SoftBank −15 %, Tokyo Electron y Advantest −13 %, TSMC −7 %, Samsung y SK Hynix −8 %", "v": "Taiex −6 %", "dir": "dn" },
-    { "t": "Bloomberg: EE. UU. prepara aranceles más altos a China, la UE y otra docena de economías, sustituyendo a los que anuló el Supremo", "v": "aranceles", "dir": "dn" },
-    { "t": "Anthropic cierra por debajo de su precio de salida (81,90 $ frente a 83 $)", "v": "ANT −6,54 %", "dir": "dn" },
-    { "t": "El Tesoro (FinCEN) investiga un acceso no autorizado a sus sistemas", "v": "ciber", "dir": "dn" },
-    { "t": "Hoy a las 14:30: PCE, PIB del T3 (2.ª estimación), bienes duraderos y paro; mañana, bolsa cerrada por Acción de Gracias", "v": "14:30", "dir": "" }
+    { "t": "Reversión al alza el miércoles: el Nasdaq llegó a caer un 4,6 % y cerró −0,6 %; el futuro NQ marcó 25.027,5, cerca del mínimo del ciclo", "v": "NDX −0,64 %", "dir": "up" },
+    { "t": "Los futuros suben en la sesión festiva y Asia acompaña: Kospi +4,2 %, Shanghai +3,2 %, Hang Seng +2,1 %, Nikkei +2 %", "v": "NQ ≈ +1,8 %", "dir": "up" },
+    { "t": "PCE subyacente de octubre 3,3 % (est. 3,2 %) y PIB del T3 revisado al 4,3 %: la subida de la Fed de diciembre, casi segura", "v": "3,3 %", "dir": "dn" },
+    { "t": "EE. UU. propone nuevos aranceles (Sección 301) a 14 socios, entre ellos China, la UE, Japón e India", "v": "aranceles", "dir": "dn" },
+    { "t": "S&P Global pone en vigilancia negativa el rating AA de Nvidia", "v": "NVDA −3,91 %", "dir": "dn" },
+    { "t": "Ataque hutí a la refinería saudí de Ras Tanura: el crudo sube con fuerza", "v": "Brent ≈ 97 $", "dir": "dn" }
   ],
-  "noticias_nota": "Futuro NQ: cotización de Yahoo Finance (25.897,5, −378,25, −1,44 %); el texto del mismo artículo (07:06 Madrid) daba −1,20 % y Oninvest −1,4 %. Cierres: Capp Notes. Asia: AP y Oninvest (cifras del Kospi y del Nikkei distintas según la hora).",
+  "noticias_nota": "Futuro NQ: Investing.com (26.571, +1,8 %, a las 03:18 Madrid); la barra de cotización de la misma página daba 26.731 (+2,6 %) más tarde. Cierre y rango del miércoles: Proptraderz. El cierre de la sesión festiva del jueves (≈ 26.101) está calculado a partir del %. Cierres de índices: Capp Notes. Asia: AP.",
   "estructura": {
-    "h4": "Bajista. El rebote desde 24.977 se frenó el lunes en ≈ 26.750 (justo bajo el mínimo del 9 nov, 26.751) y ayer el precio perdió 26.366–26.399; esta madrugada cae también por debajo de 26.000. Es un máximo decreciente: la tendencia desde el récord sigue siendo bajista. Soportes: 25.611 (mínimo de reacción del 23 nov), 25.126 (cierre del 20 nov) y 24.977 (mínimo del ciclo). Perder 24.977 abriría una nueva pata bajista.",
-    "h1": "Bajista: gap nocturno bajo 26.000 con máximos y mínimos decrecientes desde el pico del lunes. Rebotes hacia 26.000–26.253 son zonas de venta. Máx./mín. nocturnos: —. Los datos de las 14:30 pueden provocar un movimiento brusco en cualquier dirección."
+    "h4": "Bajista con señal de suelo. La tendencia desde el récord de octubre (31.616,5) sigue marcando máximos decrecientes en diario (27.838 → 27.137 → 27.036 → 26.350,75), pero el miércoles el precio barrió por debajo de 25.510 y se dio la vuelta desde 25.027,5 sin perder el mínimo del ciclo (24.976,5): es un posible doble suelo. Para romper la secuencia bajista hace falta un cierre sobre 26.351; para hablar de giro alcista de fondo, recuperar 27.137.",
+    "h1": "Alcista de corto plazo: máximos y mínimos crecientes desde 25.027,5 y gap nocturno sobre el pivote alcista (26.146–26.170). El precio está en la zona de peligro 26.350–26.400 y por encima de ella hay resistencias en 26.436–26.451, 26.500–26.514 y 26.569–26.603. Un retroceso que respete 26.146–26.170 sería de compra; perderlo devolvería el precio a la zona 25.905–26.011."
   },
   "fuerza": [
-    { "n": "HP (fuera de hora)", "v": "≈ +9 %", "pct": 59, "dir": "up" },
-    { "n": "Salud (mar.)", "v": "+2,95 %", "pct": 19, "dir": "up" },
-    { "n": "Hang Seng (hoy)", "v": "+1,0 %", "pct": 7, "dir": "up" },
-    { "n": "Dow (mar.)", "v": "+0,85 %", "pct": 6, "dir": "up" },
-    { "n": "Futuro NQ (noche)", "v": "≈ −1,44 %", "pct": 9, "dir": "dn" },
-    { "n": "Nasdaq 100 (mar.)", "v": "−1,99 %", "pct": 13, "dir": "dn" },
-    { "n": "Nikkei (hoy)", "v": "−3,6 %", "pct": 24, "dir": "dn" },
-    { "n": "Kospi (hoy)", "v": "−5,6 %", "pct": 37, "dir": "dn" },
-    { "n": "SOXX (mar.)", "v": "−8,27 %", "pct": 54, "dir": "dn" },
-    { "n": "SoftBank (hoy)", "v": "−15 %", "pct": 100, "dir": "dn" }
+    { "n": "Kospi (hoy)", "v": "+4,2 %", "pct": 100, "dir": "up" },
+    { "n": "Meta (miér.)", "v": "+3,40 %", "pct": 81, "dir": "up" },
+    { "n": "Shanghai (hoy)", "v": "+3,2 %", "pct": 76, "dir": "up" },
+    { "n": "Materiales (miér.)", "v": "+2,07 %", "pct": 49, "dir": "up" },
+    { "n": "Nikkei (hoy)", "v": "+2,0 %", "pct": 48, "dir": "up" },
+    { "n": "Futuro NQ (noche)", "v": "≈ +1,8 %", "pct": 43, "dir": "up" },
+    { "n": "Nasdaq 100 (miér.)", "v": "−0,64 %", "pct": 15, "dir": "dn" },
+    { "n": "Tecnología (miér.)", "v": "−0,83 %", "pct": 20, "dir": "dn" },
+    { "n": "Amazon (miér.)", "v": "−3,12 %", "pct": 74, "dir": "dn" },
+    { "n": "Nvidia (miér.)", "v": "−3,91 %", "pct": 93, "dir": "dn" }
   ],
-  "fuerza_nota": "Sectores, índices y valores del martes: Capp Notes; Asia, hoy (AP y Oninvest); futuro NQ: Yahoo Finance. Rotación clara: salud y consumo básico arriba; tecnología y semis, a la cola.",
+  "fuerza_nota": "Sectores, índices y valores del miércoles: Capp Notes; Asia, hoy (AP); futuro NQ: Investing.com. El miércoles la amplitud fue positiva pese a la caída del Nasdaq.",
   "niveles": [
-    { "n": "Resistencia 4 · máximo del rebote (23 nov) / mín. del 9 nov", "v": "26.750", "tipo": "r" },
-    { "n": "Resistencia 3 · máximo de 2025 / mínimo de noviembre", "v": "26.366–26.399", "tipo": "r" },
-    { "n": "Cierre de ayer (futuro)", "v": "≈ 26.275,75", "tipo": "ref" },
-    { "n": "Resistencia 2 · referencia de gráfico (investingLive)", "v": "26.253", "tipo": "r" },
-    { "n": "Resistencia 1 · número redondo", "v": "26.000", "tipo": "r" },
-    { "n": "Precio premarket (≈ 07:00 Madrid)", "v": "≈ 25.897,5", "tipo": "precio" },
-    { "n": "Soporte 1 · área de valor nocturna del 23 nov", "v": "25.747–25.850", "tipo": "s" },
-    { "n": "Soporte 2 · mínimo de reacción del 23 nov", "v": "25.611", "tipo": "s" },
-    { "n": "Soporte 3 · cierre del 20 nov (futuro)", "v": "≈ 25.126", "tipo": "s" },
-    { "n": "Soporte 4 · mínimo del ciclo (20 nov)", "v": "24.977", "tipo": "s" }
+    { "n": "Resistencia 4 · Proptraderz", "v": "26.638–26.710", "tipo": "r" },
+    { "n": "Resistencia 3 · Proptraderz", "v": "26.569–26.603", "tipo": "r" },
+    { "n": "Precio premarket (03:18 Madrid)", "v": "≈ 26.571", "tipo": "precio" },
+    { "n": "Resistencia 2 · Proptraderz", "v": "26.500–26.514", "tipo": "r" },
+    { "n": "Resistencia 1 · fuerza / máx. del miércoles", "v": "26.351–26.400", "tipo": "r" },
+    { "n": "Cierre del jueves (sesión festiva, estimado)", "v": "≈ 26.101", "tipo": "ref" },
+    { "n": "Soporte 1 · pivote alcista", "v": "26.146–26.170", "tipo": "s" },
+    { "n": "Soporte 2 · zona de estrangulamiento / cierre del miércoles", "v": "25.905–26.013", "tipo": "s" },
+    { "n": "Soporte 3 · Proptraderz", "v": "25.800–25.850", "tipo": "s" },
+    { "n": "Soporte 4 · pivote bajista / debilidad", "v": "25.510–25.533", "tipo": "s" },
+    { "n": "Soporte 5 · mínimo del ciclo", "v": "24.976,5–25.027,5", "tipo": "s" }
   ],
-  "niveles_nota": "No he encontrado niveles del futuro NQ publicados hoy: se usan los de investingLive (23 nov) y los máximos y mínimos de los días anteriores. Cierre del martes calculado a partir de la cotización y la variación de Yahoo. RSI: —.",
+  "niveles_nota": "Niveles del futuro NQ (diciembre): Proptraderz (plan del 26–27 nov), con cierre, máximo y mínimo del miércoles. Nota: el precio de esta madrugada ya está por encima de 26.351–26.514, así que esas zonas pasan a ser primeros soportes si el precio se mantiene arriba. RSI: —.",
   "escenarios": {
-    "principal": { "titulo": "Escenario principal · continuación bajista hacia 25.611", "dir": "dn", "texto": "Con Asia hundiendo a los chips y amenaza de aranceles, el precio sigue cayendo: rebotes hacia 26.000 se venden y el precio busca 25.747–25.611. Un PCE caliente a las 14:30 reforzaría la subida de la Fed y la venta.", "gatillo": "Gatillo: rechazo en 26.000 y cierre de 15 min bajo 25.747 tras el dato o la apertura cash (15:30)" },
-    "alternativo": { "titulo": "Alternativo · datos suaves y rebote de víspera de festivo", "dir": "up", "texto": "Un PCE en línea o por debajo y el cierre de posiciones antes de Acción de Gracias provocan un rebote: el precio recupera 26.000 y busca 26.253–26.366. HP y Dell ayudan al hardware.", "gatillo": "Gatillo: cierre de 1H sobre 26.000" },
-    "invalidacion": "Invalidación: cierre de 4H sobre 26.399 anula el sesgo bajista (→ 26.750); cierre de 4H bajo 25.611 lo acelera (→ 25.126 y 24.977)."
+    "principal": { "titulo": "Escenario principal · continuación del rebote en sesión corta", "dir": "up", "texto": "Con Asia al alza y el doble suelo del miércoles, el precio aguanta sobre 26.351–26.400 y busca 26.638–26.710 y 26.826–26.833 antes del cierre anticipado (19:00). Volumen bajo: los movimientos pueden ser bruscos.", "gatillo": "Gatillo: retroceso que respete 26.351–26.400 y cierre de 30 min por encima tras la apertura cash (15:30)" },
+    "alternativo": { "titulo": "Alternativo · se vende el gap en la resistencia diaria", "dir": "dn", "texto": "La zona 26.351–26.400 frena otra vez al precio (máximo decreciente) y, con poco volumen y titulares de aranceles, el gap se cierra hacia 26.146–26.170 y 25.905–26.013.", "gatillo": "Gatillo: cierre de 30 min bajo 26.351 sin recuperación" },
+    "invalidacion": "Invalidación: cierre de 4H bajo 25.905 anula el rebote (→ 25.510); cierre diario sobre 26.351 rompe la secuencia de máximos decrecientes (→ 27.000–27.137)."
   },
   "intermercado": [
-    { "n": "Brent", "v": "≈ 87,4–87,7", "c": "−1,3 % a −1,6 % hoy · WTI ≈ 80,6–80,9", "dir": "dn" },
-    { "n": "Bono 10A EE. UU.", "v": "≈ 4,90 %", "c": "plano · 2A 4,63 %", "dir": "" },
-    { "n": "Oro", "v": "≈ 3.520", "c": "−1,2 % hoy · −2,6 % ayer", "dir": "dn" },
-    { "n": "USD/JPY", "v": "159,29", "c": "plano · EUR/USD 1,0946", "dir": "" },
-    { "n": "VIX", "v": "26,36", "c": "−1,0 % (cierre mar.)", "dir": "up" },
-    { "n": "Bitcoin", "v": "≈ 59.900", "c": "−2,2 % (mar.)", "dir": "dn" }
+    { "n": "Brent", "v": "≈ 97,3", "c": "+0,8 % hoy · +3,5 % el miércoles · WTI 86,2", "dir": "up" },
+    { "n": "Bono 10A EE. UU.", "v": "4,85 %", "c": "−6 pb (cierre miér.) · 2A 4,61 %", "dir": "dn" },
+    { "n": "Oro", "v": "3.534,70", "c": "−0,7 % (cierre miér.; tocó < 3.500)", "dir": "dn" },
+    { "n": "USD/JPY", "v": "159,33", "c": "+0,1 % · EUR/USD 1,0982", "dir": "up" },
+    { "n": "VIX", "v": "28,29", "c": "+7,3 % (cierre miér.; máx. ≈ 35)", "dir": "dn" },
+    { "n": "Bitcoin", "v": "≈ 60.100", "c": "+0,6 % (miér.)", "dir": "up" }
   ],
-  "globales": "Asia se hunde en tecnología: Taiex −6 %, Kospi −5,6 % (4.725,84), Nikkei −3,6 % (56.502,97), Shanghai −0,9 % (3.515,05), ASX −0,5 % (8.683,90); solo sube el Hang Seng (+1 %, 22.449,86). SoftBank −15 %, Tokyo Electron y Advantest ≈ −13 %, TSMC −7 %, Samsung y SK Hynix más de −8 %. Europa abre a las 09:00. Índice del dólar 103,83.",
+  "globales": "Asia sube con la IA tras el festivo en EE. UU.: Kospi +4,2 % (4.906,93), Shanghai +3,2 % (3.586,30), Hang Seng +2,1 % (22.682,64), Nikkei +2,0 % (58.628,59; Tokyo Electron y Advantest se dieron la vuelta al alza), ASX +0,8 % (8.833,60). Preocupa el efecto de los nuevos aranceles de EE. UU. en la región. Europa abre a las 09:00. Índice del dólar 103,71.",
   "agenda": [
-    { "h": "Antes apertura", "e": "Deere, Li Auto y Kanzhun: resultados", "imp": "bajo" },
-    { "h": "14:30", "e": "PCE de octubre, renta y gasto personal · PIB del T3 (2.ª estimación) · bienes duraderos · paro semanal", "imp": "alto" },
-    { "h": "15:30", "e": "Apertura de Wall Street", "imp": "medio" },
-    { "h": "22:00", "e": "Cierre de Wall Street", "imp": "bajo" },
-    { "h": "26 nov", "e": "Acción de Gracias: bolsa de EE. UU. cerrada", "imp": "medio" },
-    { "h": "27 nov", "e": "Sesión corta: cierre a las 19:00 (Madrid)", "imp": "medio" },
-    { "h": "Mediados dic.", "e": "Rollover de MNQZ26 a MNQH27", "imp": "medio" },
-    { "h": "8–9 dic", "e": "Próximo FOMC: el mercado sigue esperando una subida", "imp": "alto" }
+    { "h": "14:30", "e": "Balanza comercial de EE. UU.", "imp": "medio" },
+    { "h": "15:30", "e": "Apertura de Wall Street (sesión corta)", "imp": "medio" },
+    { "h": "19:00", "e": "Cierre anticipado de Wall Street (futuros: 19:15)", "imp": "medio" },
+    { "h": "Todo el día", "e": "Black Friday: primeras lecturas del consumo en EE. UU.", "imp": "bajo" },
+    { "h": "Próx. semana", "e": "Empleo de noviembre (viernes 4 dic) e ISM (horas: —)", "imp": "alto" },
+    { "h": "18 dic", "e": "Último día de negociación de MNQZ26; rollover a MNQH27 unos días antes", "imp": "medio" },
+    { "h": "8–9 dic", "e": "Próximo FOMC: subida de 25 pb casi descontada", "imp": "alto" }
   ],
-  "resultados": "Hoy: Deere, Li Auto y Kanzhun (antes de la apertura). Ayer tras el cierre: HP (≈ +9 %), Dell (≈ +4 %, ingresos récord y guía al alza), Workday (≈ −4 %, guía floja de suscripciones) y Autodesk (≈ −4 % pese a batir).",
+  "resultados": "Hoy: sin resultados relevantes del Nasdaq 100. La semana que viene: no he encontrado la lista confirmada.",
   "pesados": [
-    { "t": "NVDA", "v": "−5,86 % (mar.)", "dir": "dn" },
-    { "t": "AAPL", "v": "—", "dir": "" },
+    { "t": "NVDA", "v": "−3,91 % (miér.)", "dir": "dn" },
+    { "t": "AAPL", "v": "+0,43 % (miér.)", "dir": "up" },
     { "t": "MSFT", "v": "—", "dir": "" },
-    { "t": "AMZN", "v": "—", "dir": "" },
-    { "t": "META", "v": "—", "dir": "" },
-    { "t": "GOOGL", "v": "—", "dir": "" },
-    { "t": "TSLA", "v": "—", "dir": "" },
-    { "t": "AVGO", "v": "−3,98 % (mar.)", "dir": "dn" }
+    { "t": "AMZN", "v": "−3,12 % (miér.)", "dir": "dn" },
+    { "t": "META", "v": "+3,40 % (miér.)", "dir": "up" },
+    { "t": "GOOGL", "v": "−2,13 % (miér.)", "dir": "dn" },
+    { "t": "TSLA", "v": "−1,18 % (miér.)", "dir": "dn" },
+    { "t": "AVGO", "v": "—", "dir": "" }
   ],
-  "pesados_nota": "Cierres del martes según Capp Notes; el resto de las 7 Magníficas no aparece en mi fuente. No hay premarket publicado a esta hora. Semis el martes: SOXX −8,27 %, Micron −11,01 %.",
+  "pesados_nota": "Cierres del miércoles según Capp Notes e Investing.com; MSFT y AVGO: sin dato. No hay premarket publicado a esta hora. Semis el miércoles: SOXX −0,50 %, SMH −1,01 %.",
   "analisis": {
     "swing": {
-      "dir": "dn",
+      "dir": "",
       "marco": "Diario / 4H · días a semanas",
-      "titulo": "Bajista: el rebote ha marcado un máximo decreciente",
-      "texto": "El rebote desde 24.977 se agotó en ≈ 26.750, justo bajo el soporte perdido de 26.751, y ya se ha deshecho más de la mitad. La tendencia diaria sigue bajista y vuelve la presión sobre los chips, con amenaza de aranceles y la Fed camino de subir. Semana corta (jueves cerrado y viernes medio día): tamaño reducido. Rebotes hacia 26.253–26.399 son zonas de venta.",
-      "entrada": "26.253–26.399 (rechazo en 4H)",
-      "stop": "Cierre diario sobre 26.750",
-      "objetivos": ["25.611", "24.977", "24.500"],
-      "alternativa": "Alternativa: si 24.977 aguanta como doble suelo y el precio recupera 26.750 en cierre diario, el sesgo swing pasa a neutral-alcista."
+      "titulo": "Neutral: posible doble suelo, falta confirmación",
+      "texto": "La tendencia diaria sigue con máximos decrecientes, pero el miércoles el precio barrió por debajo de 25.510 y se dio la vuelta desde 25.027,5 sin perder el mínimo del ciclo (24.976,5): posible doble suelo. Hoy el precio llega a la resistencia clave (26.351). Un cierre diario por encima rompería la secuencia bajista y daría pie a comprar retrocesos; un rechazo claro mantendría el sesgo bajista. Sesión corta y de poco volumen: mejor esperar al cierre semanal para decidir.",
+      "entrada": "Largo: retroceso a 26.351–26.400 tras cierre diario por encima · Corto: rechazo diario en 26.351–26.638",
+      "stop": "Largo: cierre diario bajo 25.905 · Corto: cierre diario sobre 26.710",
+      "objetivos": ["27.000–27.137 (si rompe al alza)", "25.510 (si rechaza)", "24.976"],
+      "alternativa": "Recuperar 27.137 en cierre diario cambiaría el sesgo swing a alcista; perder 24.976 abriría una nueva pata bajista (→ 24.561)."
     },
     "intradia": {
-      "dir": "dn",
-      "marco": "15 min / 1H · solo hoy",
-      "titulo": "Bajista: vender rebotes, cuidado con las 14:30",
-      "texto": "Gap bajista de ≈ 380 puntos con datos muy importantes a las 14:30. Plan: no operar en los minutos del dato. Después, vender rebotes hacia 26.000 si son rechazados en 15 min. Si el precio llega a 25.611 sin rebote previo, no vender en el soporte.",
-      "entrada": "26.000 (rechazo en 15 min tras los datos)",
-      "stop": "26.080 (sobre 26.000)",
-      "objetivos": ["25.850", "25.747", "25.611"],
-      "alternativa": "Si el precio cierra 1H sobre 26.000, se anulan los cortos: posible rebote hacia 26.253–26.275 (cierre de ayer)."
+      "dir": "up",
+      "marco": "15 min / 30 min · solo hoy",
+      "titulo": "Alcista: comprar retrocesos, salir antes de las 19:00",
+      "texto": "Gap alcista en sesión corta. Plan: no perseguir la apertura; comprar un retroceso a 26.351–26.400 que aguante en 15 min (antigua resistencia, ahora soporte) con objetivos en las resistencias de arriba. Cerrar todo antes de las 19:00: no dejar posiciones intradía en el cierre anticipado.",
+      "entrada": "26.351–26.400 (rechazo alcista en 15 min)",
+      "stop": "26.300 (bajo 26.351)",
+      "objetivos": ["26.569–26.603", "26.638–26.710", "26.826–26.833"],
+      "alternativa": "Si el precio cierra 30 min bajo 26.351, se anulan los largos: cortos tácticos hacia 26.146–26.170."
     },
-    "nota": "Análisis propio a partir de los niveles de días anteriores (investingLive) y la estructura de price action. Volatilidad alta (VIX 26) y datos clave a las 14:30: conviene reducir tamaño. No incluye tamaño de posición ni gestión de riesgo personal."
+    "nota": "Análisis propio a partir de los niveles publicados por Proptraderz (26–27 nov) y la estructura de price action. Sesión corta y de bajo volumen (cierre a las 19:00): conviene reducir tamaño. No incluye tamaño de posición ni gestión de riesgo personal."
   },
-  "aviso_horario": "MERCADO CERRADO HOY: Acción de Gracias, la bolsa de EE. UU. no abre el jueves 26 (los futuros tienen sesión reducida). El resto del panel muestra los datos del miércoles 25. Mañana, viernes 27, sesión corta con cierre a las 19:00 (Madrid).",
+  "aviso_horario": "Hoy, viernes 27, sesión corta: Wall Street cierra a las 19:00 (Madrid) y los futuros a las 19:15. El lunes 30 vuelve el horario normal (apertura 15:30, cierre 22:00).",
   "fuentes": [
-    { "n": "Capp Notes (cierre del martes)", "url": "https://cappnotes.substack.com/p/closing-look-tuesday-november-24" },
-    { "n": "Yahoo Finance (futuros, agenda y materias primas)", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-p-500-open-060617625.html" },
-    { "n": "AP vía WSLS (Asia, crudo y divisas)", "url": "https://www.wsls.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-fall-following-a-retreat-on-wall-street/" },
-    { "n": "Oninvest (Asia, aranceles y Tesoro)", "url": "https://en.oninvest.com/article/top-stories-this-morning-a-sell-off-in-asia-a-hack-of-the-u-s-treasury-and-huang-s-apology" },
-    { "n": "investingLive (niveles del futuro NQ, 23 nov)", "url": "https://investinglive.com/stocks/nasdaq-analysis-today-as-we-wake-up-to-the-green/" }
+    { "n": "Capp Notes (cierre del miércoles)", "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-25" },
+    { "n": "Proptraderz (niveles del futuro NQ, 26–27 nov)", "url": "https://www.proptraderz.com/nq-daily-trade-plan-2026-11-26-27/" },
+    { "n": "Investing.com (futuros en la sesión festiva)", "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-in-holidaythinned-trade-tech-rebound-in-focus-5052775" },
+    { "n": "AP vía Click2Houston (Asia, crudo y divisas)", "url": "https://www.click2houston.com/business/2026/11/27/asian-shares-mostly-rise-ahead-of-wall-streets-reopening-after-thanksgiving/" }
   ]
 };
